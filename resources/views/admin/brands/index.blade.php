@@ -13,8 +13,9 @@
             </div>
             <!-- /.box-header -->
             <div class="box-body">
+                @include('admin.partials.form-errors')
                 @if(Session::has('susses'))
-                    <div class="alert alert-susses">
+                    <div class="alert alert-success">
                         <div>{{session('susses')}}</div>
                     </div>
                 @endif
@@ -34,21 +35,22 @@
                         </thead>
                         <tbody>
                         @foreach($brands as $brand)
-                        <tr>
-                            <td class="text-center">{{$brand->id}}</td>
-                            <td>{{$brand->title}}</td>
-                            <td class="text-center">
-                                <div class="display-inline-block">
-                                    <form method="post" action="/administrator/brands/{{$brand->id}}">
-                                        @csrf
-                                        <input type="hidden" name="_method" value="DELETE">
-                                        <a href="{{route('brands.edit',$brand->id)}}" class="btn btn-warning" >ویرایش</a>
-                                        <button type="submit"  class="btn btn-danger " >حذف</button>
-                                    </form>
-                                </div>
+                            <tr>
+                                <td class="text-center">{{$brand->id}}</td>
+                                <td class="text-center">{{$brand->title}}</td>
+                                <td class="text-center">
+                                    <div class="display-inline-block">
+                                        <form method="post" action="/administrator/brands/{{$brand->id}}">
+                                            @csrf
+                                            <input type="hidden" name="_method" value="DELETE">
+                                            <a href="{{route('brands.edit',$brand->id)}}"
+                                               class="btn btn-warning">ویرایش</a>
+                                            <button type="submit" class="btn btn-danger ">حذف</button>
+                                        </form>
+                                    </div>
 
-                            </td>
-                        </tr>
+                                </td>
+                            </tr>
                         @endforeach
                         </tbody>
                     </table>

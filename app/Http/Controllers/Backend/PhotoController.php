@@ -1,7 +1,6 @@
 <?php
 
 namespace App\Http\Controllers\Backend;
-
 use App\Photo;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -32,7 +31,7 @@ class PhotoController extends Controller
         $filename=time().$uploadFile->getClientOriginalName();
         $original_name=$uploadFile->getClientOriginalName();
         Storage::disk('local')->putFileAs(
-            'photos/',$uploadFile,$filename
+            'public/photos',$uploadFile,$filename
         );
 
         $photo=new Photo();

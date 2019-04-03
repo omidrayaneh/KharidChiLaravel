@@ -45,6 +45,7 @@ class BrandController extends Controller
             'description'=>'required'
         ],[
             'title.required'=>'عنوان برند خالیست',
+            'title.unique'=>'این برند قبلا ثبت شده است',
             'description.required'=>'توضیحات برند خالیست'
         ]);
     if($validator->fails()){
@@ -81,7 +82,8 @@ class BrandController extends Controller
      */
     public function edit($id)
     {
-        //
+        $brand=Brand::with('photo')->whereId($id)->first();
+        return view('admin.brands.edit',compact(['brand']));
     }
 
     /**
@@ -93,7 +95,27 @@ class BrandController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $validator=Validator::make($request->all(),[
+            'title'=>'required|unique:brands,title,'.$id,
+            'description'=>'required'
+        ],[
+            'title.required'=>'عنوان برند خالیست',
+            'title.unique'=>'این برند قبلا ثبت شده است',
+            'description.required'=>'توضیحات برند خالیست'
+        ]);
+        if($validator->fails()){
+            return redirect('/administrator/brands')->withErrors($validator)->withInput();
+        }
+        else
+            $brand =Brand::findOrFail($id);
+        $brand->title=$request->input('title');
+        $brand->description=$request->input('description');
+        $brand->photo_id=$request->input('photo_id');
+        $brand->save();
+
+        Session::flash('susses', 'برند با موفقیت ویرایش شد');
+
+        return redirect('administrator/brands');
     }
 
     /**
@@ -104,6 +126,9 @@ class BrandController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $brand = Brand::findOrFail($id);
+        $brand->delete();
+        Session::flash('success', 'برند با موفقیت حذف شد');
+        return redirect('/administrator/brands');
     }
 }

@@ -17,20 +17,18 @@
                         <form method="post" action="/administrator/brands" >
                             @csrf
                             <div class="form-group">
-                                <label for="title">نام</label>
+                                <label for="title">نام برند</label>
                                 <input type="text" name="title" class="form-control" placeholder="نام برند ...">
                             </div>
-
                             <div class="form-group">
-                                <label for="description">توضیحات </label>
-                                <textarea type="text" name="description" class="form-control" placeholder="توضیحات ..."></textarea>
+                                <label for="description">توضیحات برند</label>
+                                <textarea type="text" name="description" class="form-control" placeholder="توضیحات برند..."></textarea>
                             </div>
                             <div class="form-group">
                                 <label for="photo">تصویر</label>
                                 <input type="hidden" name="photo_id" id="brand-photo">
                                 <div id="photo" class="dropzone"></div>
                             </div>
-
                             <button type="submit" class="btn btn-success pull-left">ذخیره</button>
                         </form>
                     </div>
