@@ -21,8 +21,11 @@ class CrateProductTable extends Migration
             $table->tinyInteger('status');
             $table->float('price');
             $table->float('discount_price')->nullable();
-            $table->text('short_description');
+            $table->text('short_description')->nullable();;
             $table->text('long_description')->nullable();
+            $table->string('meta_desc')->nullable();
+            $table->string('meta_title')->nullable();
+            $table->string('meta_keywords')->nullable();
 
             $table->unsignedBigInteger('category_id');
             $table->foreign('category_id')->references('id')->on('categories')->onDelete('cascade');
