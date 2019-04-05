@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Backend;
 
+use App\AttributeGroup;
 use App\Category;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -81,6 +82,24 @@ class CategoryController extends Controller
             return redirect('/administrator/categories');
         }
         $category->delete();
+        return redirect('/administrator/categories');
+    }
+
+    public function indexSetting($id)
+    {
+        $category=Category::findOrFail($id);
+        $attributesGroup=AttributeGroup::all();
+        return view('admin.categories.index-setting',compact(['category','attributesGroup']));
+    }
+
+    public function saveSetting(Request $request,$id)
+    {
+        $category=Category::findOrFail($id);
+        $category->attributesGroup()->sync($request->attributesGroup);
+        $category->save();
+
+
+
         return redirect('/administrator/categories');
     }
 }

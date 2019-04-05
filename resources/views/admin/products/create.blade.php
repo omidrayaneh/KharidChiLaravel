@@ -25,8 +25,8 @@
                                 <input type="text" name="slug" class="form-control" placeholder="نام مستعار محصول ...">
                             </div>
                             <div class="form-group">
-                                <label for="category">دسته بندی</label>
-                                <select name="category" id="" class="form-control" multiple>
+                                <label for="categories">دسته بندی</label>
+                                <select name="categories[]" id="" class="form-control" multiple>
                                     @foreach($categories as $category)
                                         <option value="{{$category->id}}">{{$category->name}}</option>
                                         @if(count($category->childrenRecursive)>0)

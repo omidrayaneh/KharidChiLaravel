@@ -40,9 +40,9 @@
                                         @csrf
                                         <input type="hidden" name="_method" value="DELETE">
                                         <button type="submit"  class="btn btn-danger " >حذف</button>
+                                        <a href="{{route('categories.indexSetting',$category->id,compact($categories))}}" class="btn btn-primary" >ویرایش</a>
                                     </form>
                                 </div>
-
                             </td>
                         </tr>
                         @if(count($category->childrenRecursive)>0)
