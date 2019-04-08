@@ -19,8 +19,8 @@ class CrateProductTable extends Migration
             $table->string('sku')->unique();
             $table->string('slug')->unique();
             $table->tinyInteger('status');
-            $table->float('price');
-            $table->float('discount_price')->nullable();
+            $table->integer('price');
+            $table->integer('discount_price')->nullable();
             $table->text('short_description')->nullable();;
             $table->text('long_description')->nullable();
             $table->string('meta_desc')->nullable();

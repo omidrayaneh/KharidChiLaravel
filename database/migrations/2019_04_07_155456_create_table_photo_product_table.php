@@ -14,13 +14,13 @@ class CreateTablePhotoProductTable extends Migration
     public function up()
     {
         Schema::create('photo_product', function (Blueprint $table) {
-            $table->bigIncrements('id');
+
             $table->unsignedBigInteger('photo_id');
-            $table->foreign('photo_id')->references('id')->on('photos')->onDelete('cascade');
+            $table->foreign('photo_id')->references('id')->on('photos');
 
             $table->unsignedBigInteger('product_id');
-            $table->foreign('product_id')->references('id')->on('products')->onDelete('cascade');
-            $table->timestamps();
+            $table->foreign('product_id')->references('id')->on('products');
+
         });
     }
 

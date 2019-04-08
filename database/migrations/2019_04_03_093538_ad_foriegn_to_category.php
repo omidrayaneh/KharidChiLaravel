@@ -14,15 +14,11 @@ class AdForiegnToCategory extends Migration
     public function up()
     {
         Schema::create('attributeGroup_category', function (Blueprint $table) {
-            $table->bigIncrements('id');
-
             $table->unsignedBigInteger('category_id');
-            $table->foreign('category_id')->references('id')->on('categories')->onDelete('cascade');
+            $table->foreign('category_id')->references('id')->on('categories');
 
             $table->unsignedBigInteger('attributeGroup_id');
-            $table->foreign('attributeGroup_id')->references('id')->on('attributesgroup')->onDelete('cascade');
-
-            $table->timestamps();
+            $table->foreign('attributeGroup_id')->references('id')->on('attributesgroup');
         });
     }
 

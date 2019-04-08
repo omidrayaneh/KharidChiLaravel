@@ -24,6 +24,7 @@
                                 <label for="slug">نام مستعار محصول</label>
                                 <input type="text" name="slug" class="form-control" placeholder="نام مستعار محصول ...">
                             </div>
+                            <option>انتخاب کنید...</option>
                             <attribute-component :brands="{{ $brands }}"></attribute-component>
                             <div class="form-group">
                                 <label>وضعیت نشر</label>

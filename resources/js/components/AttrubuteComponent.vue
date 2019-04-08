@@ -7,21 +7,22 @@
             </select>
         </div>
         <div v-if="flag">
-            <div class="form-group" v-for="attribute in attributes">
-                <lable>ویژگی {{attribute.title}}</lable>
-                <select name="attribute" class="form-control" @change="addAttribute($event)">
+            <div class="form-group" v-for="(attribute,index) in attributes">
+                <label>ویژگی {{ attribute.title }}</label>
+                <select  class="form-control" @change="addAttribute($event,index)">
+                    <option>انتخاب کنید...</option>
                     <option v-for="attributeValue in attribute.attributes_value" :value="attributeValue.id">{{attributeValue.title}}</option>
                 </select>
             </div>
         </div>
+        <input type="hidden" name="attributes[]" :value="computedAttribute">
         <div class="form-group">
             <label>برند</label>
             <select name="brand" class="form-control">
+                <option>انتخاب کنید...</option>
                 <option v-for="brand in brands" :value="brand.id">{{brand.title}}</option>
             </select>
         </div>
-
-        <input type="hidden" name="attributes[]" value="selectedAttribute">
     </div>
 </template>
 
@@ -35,6 +36,7 @@
                 flag: false,
                 attributes: [],
                 selectedAttribute:[],
+                computedAttribute:[],
             }
         },
         props: ['brands'],
@@ -67,19 +69,25 @@
                         console.log(err)
                         this.flag = false;
                     })
-               /* this.flag = false;
-                axios.post('/api/categories/attribute', this.categories_selected).then(res => {
-                    this.attributes = res.data.attributes
-                    this.flag = true
-                }).catch(err => {
-                    console.log(err)
-                    this.flag = false;
-                })*/
             },
-            addAttribute:function (event) {
-                if (this.selectedAttribute.indexOf(event.target.value)===-1) {
-                    this.selectedAttribute.push(event.target.value)
+            addAttribute:function (event,index) {
+                for (var i=0;i<this.selectedAttribute.length;i++){
+                  var current=this.selectedAttribute[i];
+                  if (current.index=== index){
+                      this.selectedAttribute.splice(i,1)
+                  }
                 }
+
+                this.selectedAttribute.push({
+                    'index':index,
+                    'value':event.target.value
+                })
+                this.computedAttribute=[]
+                for (var i=0;i<this.selectedAttribute.length;i++){
+                    this.computedAttribute.push(this.selectedAttribute[i].value)
+
+                }
+
             }
         }
     }
