@@ -15,7 +15,7 @@
                                 <label for="attributesGroup">انتخاب ویژگی</label>
                                 <select name="attributesGroup[]" id="" class="form-control" multiple>
                                     @foreach($attributesGroup as $attributeGroup)
-                                        <option value="{{$attributeGroup->id}}">{{$attributeGroup->title}}</option>
+                                        <option value="{{$attributeGroup->id}}" @if(in_array($attributeGroup->id,$category->attributesGroup->pluck('id')->toArray())) selected @endIf >{{$attributeGroup->title}}</option>
                                     @endforeach
                                 </select>
                             </div>

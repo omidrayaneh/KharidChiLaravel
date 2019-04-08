@@ -37,10 +37,10 @@
                                 <div class="display-inline-block">
                                     <form method="post" action="/administrator/categories/{{$category->id}}">
                                         <a href="{{route('categories.edit',$category->id,compact($categories))}}" class="btn btn-warning" >ویرایش</a>
+                                        <a href="{{route('categories.indexSetting',$category->id,compact($categories))}}" class="btn btn-primary" >تنظیمات</a>
                                         @csrf
                                         <input type="hidden" name="_method" value="DELETE">
                                         <button type="submit"  class="btn btn-danger " >حذف</button>
-                                        <a href="{{route('categories.indexSetting',$category->id,compact($categories))}}" class="btn btn-primary" >ویرایش</a>
                                     </form>
                                 </div>
                             </td>

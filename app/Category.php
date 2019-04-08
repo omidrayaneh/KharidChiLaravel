@@ -17,10 +17,10 @@ class Category extends Model
     }
     public function products()
     {
-        $this->hasMany(Product::class()) ;
+        return $this->belongsToMany(Product::class()) ;
     }
     public function attributesGroup()
     {
-        $this->belongsToMany(AttributeGroup::class,'attributegroup_category','category_id','attributeGroup_id') ;
+        return $this->belongsToMany(AttributeGroup::class,'attributegroup_category','category_id','attributeGroup_id') ;
     }
 }

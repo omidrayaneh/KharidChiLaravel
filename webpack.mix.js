@@ -11,7 +11,7 @@ const mix = require('laravel-mix');
  |
  */
 
-/*mix.js('resources/js/app.js', 'public/js')
-   .sass('resources/sass/app.scss', 'public/css');*/
+mix.js('resources/js/app.js', 'public/admin/js');
+  // .sass('resources/sass/app.scss', 'public/admin/css');
 mix.styles(['resources/backend/css/dropzone.min.css'],'public/admin/dist/css/dropzone.css')
     .scripts(['resources/backend/js/dropzone.min.js'],'public/admin/dist/js/dropzone.js')

@@ -6,11 +6,13 @@
             <div class="display-inline-block">
                 <form method="post" action="/administrator/categories/{{$sub_category->id}}">
                     <a href="{{route('categories.edit',$sub_category->id,compact($categories))}}" class="btn btn-warning" >ویرایش</a>
+                    <a href="{{route('categories.indexSetting',$sub_category->id,compact($categories))}}" class="btn btn-primary" >تنظیمات</a>
                     @csrf
                     <input type="hidden" name="_method" value="DELETE">
                     <button type="submit"  class="btn btn-danger " >حذف</button>
                 </form>
             </div>
+
         </td>
     </tr>
     @if(count($sub_category->childrenRecursive)>0)

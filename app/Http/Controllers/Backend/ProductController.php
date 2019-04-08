@@ -30,7 +30,7 @@ class ProductController extends Controller
     {
         $categories=Category::with('childrenRecursive')->where('parent_id',null)->get();
         $brands=Brand::all();
-        return view('admin.products.create',compact(['categories','brands']));
+        return view('admin.products.create',compact(['brands']));
     }
 
     /**
@@ -41,7 +41,7 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        return $request->all();
     }
 
     /**

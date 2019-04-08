@@ -6,9 +6,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class Product extends Model
 {
-    public function category()
+    public function categories()
     {
-        return $this->belongsTo(Category::class);
+        return $this->belongsToMany(Category::class);
     }
     public function brand()
     {
@@ -17,5 +17,14 @@ class Product extends Model
     public function user()
     {
         return $this->belongsTo(User::class);
+    }
+
+    public function attributeValues()
+    {
+        return $this->belongsToMany(Product::class,'attributevalue_product','product_id','attributeValue_id');
+    }
+    public function photos()
+    {
+        return $this->belongsToMany(Photo::class);
     }
 }

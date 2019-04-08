@@ -14,6 +14,10 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::prefix('api')->group(function (){
+    Route::get('/categories','Backend\CategoryController@apiIndex');
+    Route::post('/categories/attribute','Backend\CategoryController@apiIndexAttribute');
+});
 Route::prefix('administrator')->group(function (){
     Route::get('/','Backend\MainController@mainPage');
     Route::resource('categories','Backend\CategoryController');
