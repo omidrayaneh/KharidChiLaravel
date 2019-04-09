@@ -21,7 +21,7 @@ class Product extends Model
 
     public function attributeValues()
     {
-        return $this->belongsToMany(Product::class,'attributevalue_product','product_id','attributeValue_id');
+        return $this->belongsToMany(AttributeValue::class,'attributevalue_product','product_id','attributeValue_id');
     }
     public function photos()
     {

@@ -1791,6 +1791,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -1802,7 +1804,7 @@ __webpack_require__.r(__webpack_exports__);
       computedAttribute: []
     };
   },
-  props: ['brands'],
+  props: ['brands', 'product'],
   mounted: function mounted() {
     var _this = this;
 
@@ -1811,6 +1813,14 @@ __webpack_require__.r(__webpack_exports__);
     }).catch(function (err) {
       console.log(err);
     });
+
+    if (this.product) {
+      for (var i = 0; i < this.product.categories.length; i++) {
+        this.categories_selected.push(this.product.categories[i].id);
+      }
+
+      this.onChange();
+    }
   },
   methods: {
     getAllChildren: function getAllChildren(currentValue, level) {
@@ -1826,7 +1836,7 @@ __webpack_require__.r(__webpack_exports__);
         }
       }
     },
-    onChange: function onChange(event) {
+    onChange: function onChange() {
       var _this2 = this;
 
       this.flag = false;
@@ -1853,8 +1863,8 @@ __webpack_require__.r(__webpack_exports__);
       });
       this.computedAttribute = [];
 
-      for (var i = 0; i < this.selectedAttribute.length; i++) {
-        this.computedAttribute.push(this.selectedAttribute[i].value);
+      for (var j = 0; j < this.selectedAttribute.length; j++) {
+        this.computedAttribute.push(this.selectedAttribute[j].value);
       }
     }
   }
@@ -36972,11 +36982,30 @@ var render = function() {
                   _c("option", [_vm._v("انتخاب کنید...")]),
                   _vm._v(" "),
                   _vm._l(attribute.attributes_value, function(attributeValue) {
-                    return _c(
-                      "option",
-                      { domProps: { value: attributeValue.id } },
-                      [_vm._v(_vm._s(attributeValue.title))]
-                    )
+                    return !_vm.product
+                      ? _c(
+                          "option",
+                          { domProps: { value: attributeValue.id } },
+                          [_vm._v(_vm._s(attributeValue.title))]
+                        )
+                      : _vm._e()
+                  }),
+                  _vm._v(" "),
+                  _vm._l(attribute.attributes_value, function(attributeValue) {
+                    return _vm.product
+                      ? _c(
+                          "option",
+                          {
+                            domProps: {
+                              value: attributeValue.id,
+                              selected:
+                                _vm.product.attribute_values[index].id ===
+                                attributeValue.id
+                            }
+                          },
+                          [_vm._v(_vm._s(attributeValue.title))]
+                        )
+                      : _vm._e()
                   })
                 ],
                 2
@@ -37002,9 +37031,26 @@ var render = function() {
           _c("option", [_vm._v("انتخاب کنید...")]),
           _vm._v(" "),
           _vm._l(_vm.brands, function(brand) {
-            return _c("option", { domProps: { value: brand.id } }, [
-              _vm._v(_vm._s(brand.title))
-            ])
+            return !_vm.product
+              ? _c("option", { domProps: { value: brand.id } }, [
+                  _vm._v(_vm._s(brand.title))
+                ])
+              : _vm._e()
+          }),
+          _vm._v(" "),
+          _vm._l(_vm.brands, function(brand) {
+            return _vm.product
+              ? _c(
+                  "option",
+                  {
+                    domProps: {
+                      value: brand.id,
+                      selected: _vm.product.brand.id === brand.id
+                    }
+                  },
+                  [_vm._v(_vm._s(brand.title))]
+                )
+              : _vm._e()
           })
         ],
         2

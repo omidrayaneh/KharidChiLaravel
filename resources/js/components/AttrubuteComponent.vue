@@ -11,8 +11,9 @@
                 <label>ویژگی {{ attribute.title }}</label>
                 <select  class="form-control" @change="addAttribute($event,index)">
                     <option>انتخاب کنید...</option>
-                    <option v-for="attributeValue in attribute.attributes_value" :value="attributeValue.id">{{attributeValue.title}}</option>
-                </select>
+                    <option v-if="!product" v-for="attributeValue in attribute.attributes_value" :value="attributeValue.id">{{attributeValue.title}}</option>
+                    <option v-if="product"  v-for="attributeValue in attribute.attributes_value" :value="attributeValue.id" :selected=" product.attribute_values[index].id=== attributeValue.id">{{attributeValue.title}}</option>                </select>
+
             </div>
         </div>
         <input type="hidden" name="attributes[]" :value="computedAttribute">
@@ -20,10 +21,11 @@
             <label>برند</label>
             <select name="brand" class="form-control">
                 <option>انتخاب کنید...</option>
-                <option v-for="brand in brands" :value="brand.id">{{brand.title}}</option>
+                <option v-if="!product" v-for="brand in brands" :value="brand.id" >{{brand.title}}</option>
+                <option v-if="product" v-for="brand in brands" :value="brand.id" :selected="product.brand.id === brand.id">{{brand.title}}</option>
             </select>
         </div>
-    </div>
+   </div>
 </template>
 
 <script>
@@ -39,13 +41,19 @@
                 computedAttribute:[],
             }
         },
-        props: ['brands'],
+        props: ['brands','product'],
         mounted() {
             axios.get('/api/categories').then(res => {
                 this.getAllChildren(res.data.categories, 0)
             }).catch(err => {
                 console.log(err)
             })
+            if(this.product){
+                for(var i=0; i<this.product.categories.length; i++){
+                   this.categories_selected.push(this.product.categories[i].id)
+                }
+                this.onChange();
+            }
         },
         methods: {
             getAllChildren: function (currentValue, level) {
@@ -60,7 +68,7 @@
                     }
                 }
             },
-            onChange: function (event) {
+            onChange: function () {
                 this.flag=false;
                 axios.post('/api/categories/attribute' ,this.categories_selected).then(res=>{
                     this.attributes = res.data.attributes
@@ -83,8 +91,8 @@
                     'value':event.target.value
                 })
                 this.computedAttribute=[]
-                for (var i=0;i<this.selectedAttribute.length;i++){
-                    this.computedAttribute.push(this.selectedAttribute[i].value)
+                for (var j=0;j<this.selectedAttribute.length;j++){
+                    this.computedAttribute.push(this.selectedAttribute[j].value)
 
                 }
 
