@@ -130,7 +130,34 @@ class ProductController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        //return $request->all();
+        $Product = Product::findOrFail($id);
+        $Product->title = $request->title;
+        $Product->sku = $this->generateSKU();
+        $Product->slug = $this->makeSlug($request->slug);
+        $Product->status = $request->status;
+        $Product->price = $request->price;
+        $Product->discount_price = $request->discount_price;
+        $Product->short_description = $request->short_description;
+        $Product->long_description = $request->long_description;
+        $Product->brand_id = $request->brand;
+        $Product->meta_desc = $request->meta_desc;
+        $Product->meta_title = $request->meta_title;
+        $Product->meta_keywords = $request->meta_keywords;
+        $Product->user_id = Auth::user()->id;
+
+        $Product->save();
+
+        $attributes = explode(',', $request->input('attributes')[0]);
+        $photos = explode(',', $request->input('photo_id')[0]);
+
+        $Product->categories()->sync($request->categories);
+        $Product->attributeValues()->sync($attributes);
+        $Product->photos()->sync($photos);
+
+        Session::flash('success', 'محصول با موفقیت ویرایش شد.');
+        return redirect('/administrator/products');
+
     }
 
     /**
@@ -141,6 +168,11 @@ class ProductController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $Product=Product::findOrFail($id);
+        $Product->delete();
+
+        Session::flash('error', 'محصول با موفقیت حذف شد.');
+        return redirect('/administrator/products');
+
     }
 }

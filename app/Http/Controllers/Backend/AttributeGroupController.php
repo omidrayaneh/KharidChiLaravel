@@ -20,7 +20,6 @@ class AttributeGroupController extends Controller
     public function create()
     {
         return view('admin.attributes.create');
-
     }
 
 
@@ -32,7 +31,6 @@ class AttributeGroupController extends Controller
         $attributesGroup->save();
 
         Session::flash('attributes-session', 'ویژگی جدید با موفقیت اضافه شد');
-
         return redirect('administrator/attributes-group');
     }
 
@@ -45,7 +43,6 @@ class AttributeGroupController extends Controller
     public function edit($id)
     {
         $attributeGroup=AttributeGroup::findOrFail($id);
-
         return view('admin.attributes.edit',['attributeGroup'=>$attributeGroup]);
     }
 
@@ -58,7 +55,6 @@ class AttributeGroupController extends Controller
         $attributesGroup->save();
 
         Session::flash('attributes-session', 'ویژگی  با موفقیت بروررسانی شد');
-
         return redirect('administrator/attributes-group');
     }
 
@@ -67,8 +63,8 @@ class AttributeGroupController extends Controller
     {
         $attributesGroup=AttributeGroup::findOrFail($id);
         $attributesGroup->delete();
-        Session::flash('attributes-delete', 'ویژگی  با موفقیت حذف شد');
 
+        Session::flash('attributes-delete', 'ویژگی  با موفقیت حذف شد');
         return redirect('administrator/attributes-group');
     }
 }

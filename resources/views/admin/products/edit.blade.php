@@ -55,7 +55,7 @@
                             </div>
                             <div class="row">
                                 @foreach($product->photos as $photo)
-                                    <div class="col-sm-3" >
+                                    <div class="col-sm-3" id="updated_photo_{{$photo->id}}">
                                         <img class="img-responsive" src="{{$photo->path}}">
                                         <button type="button" class="btn btn-danger" onclick="removeImages({{$photo->id}})">حذف</button>
                                     </div>
@@ -93,6 +93,7 @@
     <script>
         Dropzone.autoDiscover=false;
         var photosGallery = []
+        var photos=[].concat({{$product->photos->pluck('id')}})
         var drop = new Dropzone('#photo', {
             addRemoveLinks: true,
             url: "{{ route('photos.upload') }}",
@@ -104,7 +105,7 @@
             }
         });
         productGallery =function () {
-            document.getElementById('product-photo').value = photosGallery
+                document.getElementById('product-photo').value = photosGallery.concat(photos)
         }
         CKEDITOR.replace('tetxareaDescription',{
             customConfig:'config.js',
@@ -113,7 +114,9 @@
             removePlugins: 'cloudservices, easyimage'
         })
         removeImages = function (id) {
-            
+            var index=photos.indexOf(id);
+            photos.splice(index,1);
+            document.getElementById('updated_photo_' + id ).remove();
         }
     </script>
 

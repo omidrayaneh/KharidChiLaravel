@@ -11,9 +11,9 @@
 |
 */
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('welcome');
-});
+});*/
 Route::prefix('api')->group(function (){
     Route::get('/categories','Backend\CategoryController@apiIndex');
     Route::post('/categories/attribute','Backend\CategoryController@apiIndexAttribute');
@@ -30,10 +30,12 @@ Route::prefix('administrator')->group(function (){
     Route::post('photos/upload','Backend\PhotoController@upload')->name('photos.upload');
     Route::resource('products','Backend\ProductController');
 });
+Route::resource('/','Frontend\HomeController');
+
 /*Route::group(['middleware' =>'admin'],function(){
 
 });*/
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+//Route::get('/home', 'HomeController@index')->name('home');

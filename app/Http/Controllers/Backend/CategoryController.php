@@ -39,6 +39,7 @@ class CategoryController extends Controller
         $category->meta_keywords = $request->input('meta_keywords');
         $category->save();
 
+        Session::flash('categories-session', 'دسته بندی با موفقیت اضافه شد.');
         return redirect('/administrator/categories');
     }
 
@@ -69,6 +70,7 @@ class CategoryController extends Controller
         $category->meta_keywords = $request->input('meta_keywords');
         $category->save();
 
+        Session::flash('categories-session', 'دسته بندی با موفقیت ویرایش شد.');
         return redirect('/administrator/categories');
     }
 
@@ -76,10 +78,11 @@ class CategoryController extends Controller
     {
         $category = Category::with('childrenRecursive')->where('id', $id)->first();
         if (count($category->childrenRecursive) > 0) {
-            Session::flash('error_category', ' دسته بندی ' . $category->name . ' دارای زیر دسته می باشد و حذف آن امکان پذیر نیست.');
+            Session::flash('error', ' دسته بندی ' . $category->name . ' دارای زیر دسته می باشد و حذف آن امکان پذیر نیست.');
             return redirect('/administrator/categories');
         }
         $category->delete();
+        Session::flash('categories-error', 'دسته بندی با موفقیت حذف شد.');
         return redirect('/administrator/categories');
     }
 

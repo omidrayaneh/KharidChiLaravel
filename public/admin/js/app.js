@@ -1815,11 +1815,22 @@ __webpack_require__.r(__webpack_exports__);
     });
 
     if (this.product) {
+      console.log(this.product);
+
       for (var i = 0; i < this.product.categories.length; i++) {
         this.categories_selected.push(this.product.categories[i].id);
       }
 
-      this.onChange();
+      for (var i = 0; i < this.product.attribute_values.length; i++) {
+        this.selectedAttribute.push({
+          'index': i,
+          'value': this.product.attribute_values[i].id
+        });
+        this.computedAttribute.push(this.product.attribute_values[i].id);
+      }
+
+      var load = 'ok';
+      this.onChange(null, load);
     }
   },
   methods: {
@@ -1828,7 +1839,7 @@ __webpack_require__.r(__webpack_exports__);
         var current = currentValue[i];
         this.categories.push({
           id: current.id,
-          name: Array(level + 1).join("--- ") + " " + current.name
+          name: Array(level + 1).join("----") + " " + current.name
         });
 
         if (current.children_recursive && current.children_recursive.length > 0) {
@@ -1836,11 +1847,16 @@ __webpack_require__.r(__webpack_exports__);
         }
       }
     },
-    onChange: function onChange() {
+    onChange: function onChange(event, load) {
       var _this2 = this;
 
       this.flag = false;
       axios.post('/api/categories/attribute', this.categories_selected).then(function (res) {
+        if (_this2.product && load == null) {
+          _this2.computedAttribute = [];
+          _this2.selectedAttribute = [];
+        }
+
         _this2.attributes = res.data.attributes;
         _this2.flag = true;
       }).catch(function (err) {
@@ -1852,7 +1868,7 @@ __webpack_require__.r(__webpack_exports__);
       for (var i = 0; i < this.selectedAttribute.length; i++) {
         var current = this.selectedAttribute[i];
 
-        if (current.index === index) {
+        if (current.index == index) {
           this.selectedAttribute.splice(i, 1);
         }
       }
@@ -1863,8 +1879,8 @@ __webpack_require__.r(__webpack_exports__);
       });
       this.computedAttribute = [];
 
-      for (var j = 0; j < this.selectedAttribute.length; j++) {
-        this.computedAttribute.push(this.selectedAttribute[j].value);
+      for (var i = 0; i < this.selectedAttribute.length; i++) {
+        this.computedAttribute.push(this.selectedAttribute[i].value);
       }
     }
   }
@@ -36947,7 +36963,7 @@ var render = function() {
                   : $$selectedVal[0]
               },
               function($event) {
-                return _vm.onChange($event)
+                return _vm.onChange($event, null)
               }
             ]
           }
@@ -36999,8 +37015,9 @@ var render = function() {
                             domProps: {
                               value: attributeValue.id,
                               selected:
-                                _vm.product.attribute_values[index].id ===
-                                attributeValue.id
+                                _vm.product.attribute_values[index] &&
+                                _vm.product.attribute_values[index]["id"] ==
+                                  attributeValue.id
                             }
                           },
                           [_vm._v(_vm._s(attributeValue.title))]
@@ -37028,8 +37045,6 @@ var render = function() {
         "select",
         { staticClass: "form-control", attrs: { name: "brand" } },
         [
-          _c("option", [_vm._v("انتخاب کنید...")]),
-          _vm._v(" "),
           _vm._l(_vm.brands, function(brand) {
             return !_vm.product
               ? _c("option", { domProps: { value: brand.id } }, [
@@ -37044,8 +37059,8 @@ var render = function() {
                   "option",
                   {
                     domProps: {
-                      value: brand.id,
-                      selected: _vm.product.brand.id === brand.id
+                      selected: _vm.product.brand.id === brand.id,
+                      value: brand.id
                     }
                   },
                   [_vm._v(_vm._s(brand.title))]

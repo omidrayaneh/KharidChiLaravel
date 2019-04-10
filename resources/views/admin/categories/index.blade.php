@@ -13,9 +13,14 @@
             </div>
             <!-- /.box-header -->
             <div class="box-body">
-                @if(Session::has('error_category'))
+                @if(Session::has('categories-session'))
+                    <div class="alert alert-success">
+                        <div>{{session('categories-session')}}</div>
+                    </div>
+                @endif
+                @if(Session::has('categories-delete'))
                     <div class="alert alert-danger">
-                        <div>{{session('error_category')}}</div>
+                        <div>{{session('categories-delete')}}</div>
                     </div>
                 @endif
                 <div class="table-responsive">
@@ -56,5 +61,4 @@
             </div>
         </div>
     </section>
-
 @endsection

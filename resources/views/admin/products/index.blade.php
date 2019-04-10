@@ -13,10 +13,9 @@
             </div>
             <!-- /.box-header -->
             <div class="box-body">
-                @include('admin.partials.form-errors')
-                @if(Session::has('susses'))
+                @if(Session::has('success'))
                     <div class="alert alert-success">
-                        <div>{{session('susses')}}</div>
+                        <div>{{session('success')}}</div>
                     </div>
                 @endif
                 @if(Session::has('error'))
