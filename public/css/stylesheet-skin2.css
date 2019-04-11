@@ -91,10 +91,10 @@ a:hover, a b:hover, .category .tabs li a:hover, .sitemap li a:hover, .pagination
 /*  Product Thumb
 /*===================================================================================*/
 .saving {
-	background:#c68d1e;
+	background:#f12b63;
 	color:#fff;
 }
-.price, .price-new, .product-info .price { color:#c68d1e; }
+.price, .price-new, .product-info .price { color:#1d1301e8; }
 .product-thumb .button-group > button { background-color:#aaa; }
 .product-thumb .button-group > button:hover { background-color:#c68d1e; }
 .product-thumb .button-group .add-to-links button { color:#777; }

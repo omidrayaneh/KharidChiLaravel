@@ -16,10 +16,10 @@ class CreateTablePhotoProductTable extends Migration
         Schema::create('photo_product', function (Blueprint $table) {
 
             $table->unsignedBigInteger('photo_id');
-            $table->foreign('photo_id')->references('id')->on('photos')->onDelete('cascade');;
+            $table->foreign('photo_id')->references('id')->on('photos')->onDelete('cascade');
 
             $table->unsignedBigInteger('product_id');
-            $table->foreign('product_id')->references('id')->on('products')->onDelete('cascade');;
+            $table->foreign('product_id')->references('id')->on('products')->onDelete('cascade');
 
         });
     }

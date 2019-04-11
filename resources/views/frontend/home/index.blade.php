@@ -28,6 +28,30 @@
                     <li><a href="#tab-bestseller">پرفروش</a></li>
                     <li><a href="#tab-special">پیشنهادی</a></li>
                 </ul>
+                <div id="tab-featured" class="tab_content">
+                    <div class="owl-carousel product_carousel_tab">
+                        @foreach($latestProduct as $product)
+                            <div class="product-thumb clearfix">
+                                <div class="image"><a href="product.html"><img src="{{$product->photos[0]->path}}" alt="تی شرت کتان مردانه" title="تی شرت کتان مردانه" class="img-responsive" /></a></div>
+                                <div class="caption">
+                                    <h4><a href="product.html">{{$product->title}}</a></h4>
+                                    @if($product->discount_price)
+                                        <p class="price"><span class="price-new">{{$product->discount_price}} تومان</span> <span class="price-old">{{$product->price}} تومان </span><span class="saving">{{round((($product->price-$product->discount_price)*100)/$product->price)}}%</span></p>
+                                    @else
+                                        <p class="price">{{$product->price}} تومان </p>
+                                    @endif
+                                </div>
+                                <div class="button-group">
+                                    <button class="btn-primary" type="button" onClick="cart.add({{$product->id}});"><span>افزودن به سبد</span></button>
+                                    <div class="add-to-links">
+                                        <button type="button" data-toggle="tooltip" title="افزودن به علاقه مندی ها" onClick=""><i class="fa fa-heart"></i></button>
+                                        <button type="button" data-toggle="tooltip" title="مقایسه این محصول" onClick=""><i class="fa fa-exchange"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        @endforeach
+                    </div>
+                </div>
                 <div id="tab-latest" class="tab_content">
                     <div class="owl-carousel product_carousel_tab">
                         <div class="product-thumb">
@@ -131,26 +155,6 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div id="tab-featured" class="tab_content">
-                    <div class="owl-carousel product_carousel_tab">
-                        @foreach($latestProduct as $product)
-                        <div class="product-thumb clearfix">
-                            <div class="image"><a href="product.html"><img src="image/product/apple_cinema_30-220x330.jpg" alt="تی شرت کتان مردانه" title="تی شرت کتان مردانه" class="img-responsive" /></a></div>
-                            <div class="caption">
-                                <h4><a href="product.html">تی شرت کتان مردانه</a></h4>
-                                <p class="price"><span class="price-new">110000 تومان</span> <span class="price-old">122000 تومان</span><span class="saving">-10%</span></p>
-                            </div>
-                            <div class="button-group">
-                                <button class="btn-primary" type="button" onClick="cart.add('42');"><span>افزودن به سبد</span></button>
-                                <div class="add-to-links">
-                                    <button type="button" data-toggle="tooltip" title="افزودن به علاقه مندی ها" onClick=""><i class="fa fa-heart"></i></button>
-                                    <button type="button" data-toggle="tooltip" title="مقایسه این محصول" onClick=""><i class="fa fa-exchange"></i></button>
-                                </div>
-                            </div>
-                        </div>
-                        @endforeach
                     </div>
                 </div>
                 <div id="tab-bestseller" class="tab_content">

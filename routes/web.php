@@ -17,6 +17,7 @@
 Route::prefix('api')->group(function (){
     Route::get('/categories','Backend\CategoryController@apiIndex');
     Route::post('/categories/attribute','Backend\CategoryController@apiIndexAttribute');
+    Route::get('/cities/{provinceId}','Auth\RegisterController@getAllCities');
 });
 Route::prefix('administrator')->group(function (){
     Route::get('/','Backend\MainController@mainPage');
@@ -31,11 +32,13 @@ Route::prefix('administrator')->group(function (){
     Route::resource('products','Backend\ProductController');
 });
 Route::resource('/','Frontend\HomeController');
+Route::post('/register-user','Frontend\UserController@register')->name('user.register');
 
-/*Route::group(['middleware' =>'admin'],function(){
 
-});*/
+
+Route::group(['middleware' =>'auth'],function(){
+    Route::get('/profile','Frontend\UserController@profile')->name('user.profile');
+});
 
 Auth::routes();
-
-//Route::get('/home', 'HomeController@index')->name('home');
+/*Route::get('/home', 'HomeController@index')->name('home');*/
