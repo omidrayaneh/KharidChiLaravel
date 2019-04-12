@@ -6,6 +6,16 @@
     <div class="row">
         <!--Middle Part Start-->
         <div id="content" class="col-sm-9">
+            @if(Session::has('success'))
+                <div class="alert alert-success">
+                    <div>{{session('success')}}</div>
+                </div>
+            @endif
+            @if(Session::has('error'))
+                <div class="alert alert-danger">
+                    <div>{{session('error')}}</div>
+                </div>
+            @endif
             <h1 class="title">حساب کاربری ورود</h1>
             <div class="row">
                 <div class="col-sm-6">
@@ -19,8 +29,8 @@
                     <form method="post" action="{{ route('login') }}">
                         @csrf
                         <div class="form-group">
-                            <label class="control-label" for="input-email">آدرس ایمیل</label>
-                            <input type="text" name="email" value="" placeholder="آدرس ایمیل" id="input-email" class="form-control" />
+                            <label class="control-label" for="email">آدرس ایمیل</label>
+                            <input type="text" name="email" value="" placeholder="آدرس ایمیل" id="email" class="form-control" />
                             @if ($errors->has('email'))
                                 <span class="invalid-feedback" role="alert">
                                         <strong>{{ $errors->first('email') }}</strong>

@@ -34,10 +34,13 @@ Route::prefix('administrator')->group(function (){
 Route::resource('/','Frontend\HomeController');
 Route::post('/register-user','Frontend\UserController@register')->name('user.register');
 
-
+Route::get('/add-product-to-cart/{id}','Frontend\CartController@addToCart')->name('cart.add');
+Route::post('/remove-cart-item/{id}','Frontend\CartController@removeItem')->name('cart.remove');
+Route::get('/cart','Frontend\CartController@getCart')->name('cart.cart');
 
 Route::group(['middleware' =>'auth'],function(){
     Route::get('/profile','Frontend\UserController@profile')->name('user.profile');
+
 });
 
 Auth::routes();

@@ -21,76 +21,48 @@
                         </div>
                     </div>
                     <div class="form-group required">
-                        <label for="input-firstname" class="col-sm-2 control-label">نام</label>
+                        <label for="name" class="col-sm-2 control-label">نام</label>
                         <div class="col-sm-10">
-                            <input type="text" class="form-control" id="input-firstname" placeholder="نام" value="" name="name">
+                            <input type="text" class="form-control" id="name" placeholder="نام" value="" name="name">
                         </div>
                     </div>
                     <div class="form-group required">
-                        <label for="input-lastname" class="col-sm-2 control-label">نام خانوادگی</label>
+                        <label for="last_name" class="col-sm-2 control-label">نام خانوادگی</label>
                         <div class="col-sm-10">
-                            <input type="text" class="form-control" id="input-lastname" placeholder="نام خانوادگی" value="" name="last_name">
+                            <input type="text" class="form-control" id="last_name" placeholder="نام خانوادگی" value="" name="last_name">
                         </div>
                     </div>
                     <div class="form-group required">
-                        <label for="input-email" class="col-sm-2 control-label">آدرس ایمیل</label>
+                        <label for="email" class="col-sm-2 control-label">آدرس ایمیل</label>
                         <div class="col-sm-10">
-                            <input type="email" class="form-control" id="input-email" placeholder="آدرس ایمیل" value="" name="email">
+                            <input type="email" class="form-control" id="email" placeholder="آدرس ایمیل" value="" name="email">
                         </div>
                     </div>
                     <div class="form-group required">
-                        <label for="input-telephone" class="col-sm-2 control-label">شماره تلفن</label>
+                        <label for="phone" class="col-sm-2 control-label">شماره تلفن</label>
                         <div class="col-sm-10">
-                            <input type="tel" class="form-control" id="input-telephone" placeholder="شماره تلفن" value="" name="phone">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="input-fax" class="col-sm-2 control-label">کد ملی</label>
-                        <div class="col-sm-10">
-                            <input type="text" class="form-control" id="input-fax" placeholder="فکس" value="" name="national_code">
-                        </div>
-                    </div>
-                </fieldset>
-                <fieldset id="address">
-                    <legend>آدرس</legend>
-                    <div class="form-group">
-                        <label for="input-company" class="col-sm-2 control-label">نام شرکت</label>
-                        <div class="col-sm-10">
-                            <input type="text" class="form-control" id="input-company" placeholder="شرکت" value="" name="company_name">
+                            <input type="tel" class="form-control" id="phone" placeholder="شماره تلفن" value="" name="phone">
                         </div>
                     </div>
                     <div class="form-group required">
-                        <label for="input-address-1" class="col-sm-2 control-label">آدرس 1</label>
+                        <label for="mobile" class="col-sm-2 control-label">شماره موبایل</label>
                         <div class="col-sm-10">
-                            <input type="text" class="form-control" id="input-address-1" placeholder="آدرس 1" value="" name="address_1">
+                            <input type="tel" class="form-control" id="mobile" placeholder="شماره موبایل" value="" name="mobile">
                         </div>
                     </div>
-                    <div class="form-group required">
-                        <label for="input-city" class="col-sm-2 control-label">شهر</label>
-                        <div class="col-sm-10">
-                            <input type="text" class="form-control" id="input-city" placeholder="شهر" value="" name="city">
-                        </div>
-                    </div>
-                    <div class="form-group required">
-                        <label for="input-postcode" class="col-sm-2 control-label">کد پستی</label>
-                        <div class="col-sm-10">
-                            <input type="text" class="form-control" id="input-postcode" placeholder="کد پستی" value="" name="postcode">
-                        </div>
-                    </div>
-                    <select-city-component></select-city-component>
                 </fieldset>
                 <fieldset>
                     <legend>رمز عبور شما</legend>
                     <div class="form-group required">
-                        <label for="input-password" class="col-sm-2 control-label">رمز عبور</label>
+                        <label for="password" class="col-sm-2 control-label">رمز عبور</label>
                         <div class="col-sm-10">
-                            <input type="password" class="form-control" id="input-password" placeholder="رمز عبور" value="" name="password">
+                            <input type="password" class="form-control" id="password" placeholder="رمز عبور" value="" name="password">
                         </div>
                     </div>
                     <div class="form-group required">
-                        <label for="input-confirm" class="col-sm-2 control-label">تکرار رمز عبور</label>
+                        <label for="confirm" class="col-sm-2 control-label">تکرار رمز عبور</label>
                         <div class="col-sm-10">
-                            <input type="password" class="form-control" id="input-confirm" placeholder="تکرار رمز عبور" value="" name="confirm">
+                            <input type="password" class="form-control" id="confirm" placeholder="تکرار رمز عبور" value="" name="confirm">
                         </div>
                     </div>
                 </fieldset>
