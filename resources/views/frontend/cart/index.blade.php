@@ -1,5 +1,10 @@
 @extends('frontend.layout.master')
 @section('content')
+    @if(Session::has('error'))
+        <div class="alert alert-warning">
+            <div>{{session('error')}}</div>
+        </div>
+    @endif
     <div class="container">
         <!-- Breadcrumb Start-->
         <ul class="breadcrumb">
@@ -56,7 +61,7 @@
                 <h2 class="subtitle">حالا مایلید چه کاری انجام دهید؟</h2>
                 <p>در صورتی که کد تخفیف در اختیار دارید میتوانید از آن در اینجا استفاده کنید.</p>
                 <div class="row">
-                    <div class="col-sm-6">
+                    <div class="col-sm-8 col-sm-offset-2">
                         <div class="panel panel-default">
                             <div class="panel-heading">
                                 <h4 class="panel-title">استفاده از کوپن تخفیف</h4>
@@ -65,21 +70,23 @@
                                 <div class="panel-body">
                                     <label class="col-sm-4 control-label" for="input-coupon">کد تخفیف خود را در اینجا
                                         وارد کنید</label>
-                                    <div class="input-group">
-                                        <input type="text" name="coupon" value=""
-                                               placeholder="کد تخفیف خود را در اینجا وارد کنید" id="input-coupon"
-                                               class="form-control"/>
-                                        <span class="input-group-btn">
-                      <input type="button" value="اعمال کوپن" id="button-coupon" data-loading-text="بارگذاری ..."
-                             class="btn btn-primary"/>
-                      </span></div>
+                                    <form action="{{ route('coupon.add') }}" method="post" >
+                                        @csrf
+                                        <div class="input-group">
+                                            <input type="text" name="code" placeholder="کد تخفیف خود را در اینجا وارد کنید" class="form-control"/>
+                                            <span class="input-group-btn">
+                                                  <button type="submit" class="btn btn-primary"
+                                                         id="button-coupon">اعمال کوپن</button>
+                                             </span>
+                                        </div>
+                                    </form>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-sm-4 col-sm-offset-2">
+                    <div class="col-sm-4 col-sm-offset-8">
                         <table class="table table-bordered">
                             <tbody>
                             <tr>
@@ -94,6 +101,12 @@
                                     تومان
                                 </td>
                             </tr>
+                            @if(Auth::check() && Session::get('cart')->coupon)
+                                <tr>
+                                    <td class="text-right"><strong>{{Session::get('cart')->coupon['coupon']->title}}</strong></td>
+                                    <td class="text-right">{{Session::get('cart')->couponDiscount}} تومان </td>
+                                </tr>
+                            @endif
                             {{-- <tr>
                                  <td class="text-right"><strong>مالیات</strong></td>
                                  <td class="text-right">11880 تومان</td>

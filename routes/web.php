@@ -30,6 +30,7 @@ Route::prefix('administrator')->group(function (){
     Route::resource('photos','Backend\PhotoController');
     Route::post('photos/upload','Backend\PhotoController@upload')->name('photos.upload');
     Route::resource('products','Backend\ProductController');
+    Route::resource('coupons','Backend\CouponController');
 });
 Route::resource('/','Frontend\HomeController');
 Route::post('/register-user','Frontend\UserController@register')->name('user.register');
@@ -40,7 +41,7 @@ Route::get('/cart','Frontend\CartController@getCart')->name('cart.cart');
 
 Route::group(['middleware' =>'auth'],function(){
     Route::get('/profile','Frontend\UserController@profile')->name('user.profile');
-
+    Route::post('/coupon','Frontend\CouponController@addCoupon')->name('coupon.add');
 });
 
 Auth::routes();
