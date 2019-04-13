@@ -1,2 +1,10 @@
-addresses
+Validator
+create android table{
 customers
+addresses
+sms_code
+invoice->inovice_items
+cost
+message
+slider
+}
