@@ -105,7 +105,7 @@
             }
         });
         productGallery =function () {
-                document.getElementById('product-photo').value = photosGallery.concat(photos)
+            document.getElementById('product-photo').value = photosGallery.concat(photos)
         }
         CKEDITOR.replace('tetxareaDescription',{
             customConfig:'config.js',

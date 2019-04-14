@@ -1,5 +1,4 @@
 <?php
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -11,9 +10,8 @@
 |
 */
 
-/*Route::get('/', function () {
-    return view('welcome');
-});*/
+Auth::routes();
+
 Route::prefix('api')->group(function (){
     Route::get('/categories','Backend\CategoryController@apiIndex');
     Route::post('/categories/attribute','Backend\CategoryController@apiIndexAttribute');
@@ -32,17 +30,16 @@ Route::prefix('administrator')->group(function (){
     Route::resource('products','Backend\ProductController');
     Route::resource('coupons','Backend\CouponController');
 });
-Route::resource('/','Frontend\HomeController');
-Route::post('/register-user','Frontend\UserController@register')->name('user.register');
-
-Route::get('/add-product-to-cart/{id}','Frontend\CartController@addToCart')->name('cart.add');
-Route::post('/remove-cart-item/{id}','Frontend\CartController@removeItem')->name('cart.remove');
-Route::get('/cart','Frontend\CartController@getCart')->name('cart.cart');
 
 Route::group(['middleware' =>'auth'],function(){
     Route::get('/profile','Frontend\UserController@profile')->name('user.profile');
     Route::post('/coupon','Frontend\CouponController@addCoupon')->name('coupon.add');
 });
 
-Auth::routes();
-/*Route::get('/home', 'HomeController@index')->name('home');*/
+Route::resource('/','Frontend\HomeController');
+Route::post('/register-user','Frontend\UserController@register')->name('user.register');
+Route::get('/add-product-to-cart/{id}','Frontend\CartController@addToCart')->name('cart.add');
+Route::post('/remove-cart-item/{id}','Frontend\CartController@removeItem')->name('cart.remove');
+Route::get('/cart','Frontend\CartController@getCart')->name('cart.cart');
+Route::get('/products/{slug}','Frontend\ProductController@getProduct')->name('product.single');
+
