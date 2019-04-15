@@ -2,13 +2,999 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e011159-388a-47d5-813e-5975140bc4f5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/KharidChi.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/KharidChi.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/laravel-plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/laravel-plugin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/app/AttributeValue.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/AttributeValue.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Backend/AttributeValueController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Backend/AttributeValueController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Frontend/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Frontend/ProductController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/attributes-value/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/attributes-value/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/frontend/home/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/home/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/frontend/products/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/products/index.blade.php" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/notes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes.htm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin/plugins/ckeditor/CHANGES.md" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/plugins/ckeditor/CHANGES.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin/plugins/ckeditor/LICENSE.md" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/plugins/ckeditor/LICENSE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin/plugins/ckeditor/contents.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/plugins/ckeditor/contents.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/_translationstatus.txt" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/_translationstatus.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin/plugins/ckeditor/plugins/balloonpanel/skins/kama/balloonpanel.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/plugins/ckeditor/plugins/balloonpanel/skins/kama/balloonpanel.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin/plugins/ckeditor/plugins/balloonpanel/skins/moono-lisa/balloonpanel.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/plugins/ckeditor/plugins/balloonpanel/skins/moono-lisa/balloonpanel.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin/plugins/ckeditor/plugins/balloonpanel/skins/moono/balloonpanel.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/plugins/ckeditor/plugins/balloonpanel/skins/moono/balloonpanel.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin/plugins/ckeditor/plugins/balloontoolbar/skins/default.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/plugins/ckeditor/plugins/balloontoolbar/skins/default.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin/plugins/ckeditor/plugins/balloontoolbar/skins/kama/balloontoolbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/plugins/ckeditor/plugins/balloontoolbar/skins/kama/balloontoolbar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin/plugins/ckeditor/plugins/balloontoolbar/skins/moono-lisa/balloontoolbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/plugins/ckeditor/plugins/balloontoolbar/skins/moono-lisa/balloontoolbar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin/plugins/ckeditor/plugins/balloontoolbar/skins/moono/balloontoolbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/plugins/ckeditor/plugins/balloontoolbar/skins/moono/balloontoolbar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin/plugins/ckeditor/plugins/colordialog/dialogs/colordialog.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/plugins/ckeditor/plugins/colordialog/dialogs/colordialog.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin/plugins/ckeditor/plugins/copyformatting/styles/copyformatting.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/plugins/ckeditor/plugins/copyformatting/styles/copyformatting.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin/plugins/ckeditor/plugins/easyimage/styles/easyimage.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/plugins/ckeditor/plugins/easyimage/styles/easyimage.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin/plugins/ckeditor/plugins/imagebase/styles/imagebase.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/plugins/ckeditor/plugins/imagebase/styles/imagebase.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin/plugins/ckeditor/plugins/preview/preview.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/plugins/ckeditor/plugins/preview/preview.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin/plugins/ckeditor/plugins/scayt/CHANGELOG.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin/plugins/ckeditor/plugins/scayt/LICENSE.md" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/plugins/ckeditor/plugins/scayt/LICENSE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin/plugins/ckeditor/plugins/scayt/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/plugins/ckeditor/plugins/scayt/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin/plugins/ckeditor/plugins/scayt/dialogs/dialog.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/plugins/ckeditor/plugins/scayt/dialogs/dialog.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin/plugins/ckeditor/plugins/scayt/dialogs/toolbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/plugins/ckeditor/plugins/scayt/dialogs/toolbar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin/plugins/ckeditor/plugins/scayt/skins/moono-lisa/scayt.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/plugins/ckeditor/plugins/scayt/skins/moono-lisa/scayt.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin/plugins/ckeditor/plugins/specialchar/dialogs/lang/_translationstatus.txt" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/plugins/ckeditor/plugins/specialchar/dialogs/lang/_translationstatus.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin/plugins/ckeditor/plugins/tableselection/styles/tableselection.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/plugins/ckeditor/plugins/tableselection/styles/tableselection.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin/plugins/ckeditor/plugins/templates/dialogs/templates.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/plugins/ckeditor/plugins/templates/dialogs/templates.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin/plugins/ckeditor/plugins/wsc/LICENSE.md" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/plugins/ckeditor/plugins/wsc/LICENSE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin/plugins/ckeditor/plugins/wsc/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/plugins/ckeditor/plugins/wsc/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin/plugins/ckeditor/plugins/wsc/dialogs/ciframe.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/plugins/ckeditor/plugins/wsc/dialogs/ciframe.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin/plugins/ckeditor/plugins/wsc/dialogs/tmpFrameset.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/plugins/ckeditor/plugins/wsc/dialogs/tmpFrameset.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin/plugins/ckeditor/plugins/wsc/dialogs/wsc.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/plugins/ckeditor/plugins/wsc/dialogs/wsc.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin/plugins/ckeditor/plugins/wsc/skins/moono-lisa/wsc.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/plugins/ckeditor/plugins/wsc/skins/moono-lisa/wsc.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin/plugins/ckeditor/samples/css/samples.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/plugins/ckeditor/samples/css/samples.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin/plugins/ckeditor/samples/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/plugins/ckeditor/samples/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin/plugins/ckeditor/samples/js/sample.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/plugins/ckeditor/samples/js/sample.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin/plugins/ckeditor/samples/old/ajax.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/plugins/ckeditor/samples/old/ajax.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin/plugins/ckeditor/samples/old/api.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/plugins/ckeditor/samples/old/api.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin/plugins/ckeditor/samples/old/appendto.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/plugins/ckeditor/samples/old/appendto.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin/plugins/ckeditor/samples/old/assets/outputxhtml/outputxhtml.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/plugins/ckeditor/samples/old/assets/outputxhtml/outputxhtml.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin/plugins/ckeditor/samples/old/assets/posteddata.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/plugins/ckeditor/samples/old/assets/posteddata.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin/plugins/ckeditor/samples/old/datafiltering.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/plugins/ckeditor/samples/old/datafiltering.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin/plugins/ckeditor/samples/old/dialog/assets/my_dialog.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/plugins/ckeditor/samples/old/dialog/assets/my_dialog.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin/plugins/ckeditor/samples/old/dialog/dialog.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/plugins/ckeditor/samples/old/dialog/dialog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin/plugins/ckeditor/samples/old/divreplace.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/plugins/ckeditor/samples/old/divreplace.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin/plugins/ckeditor/samples/old/easyimage/easyimage.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/plugins/ckeditor/samples/old/easyimage/easyimage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin/plugins/ckeditor/samples/old/enterkey/enterkey.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/plugins/ckeditor/samples/old/enterkey/enterkey.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin/plugins/ckeditor/samples/old/htmlwriter/outputforflash.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/plugins/ckeditor/samples/old/htmlwriter/outputforflash.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin/plugins/ckeditor/samples/old/htmlwriter/outputhtml.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/plugins/ckeditor/samples/old/htmlwriter/outputhtml.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin/plugins/ckeditor/samples/old/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/plugins/ckeditor/samples/old/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin/plugins/ckeditor/samples/old/inlineall.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/plugins/ckeditor/samples/old/inlineall.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin/plugins/ckeditor/samples/old/inlinebycode.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/plugins/ckeditor/samples/old/inlinebycode.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin/plugins/ckeditor/samples/old/inlinetextarea.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/plugins/ckeditor/samples/old/inlinetextarea.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin/plugins/ckeditor/samples/old/jquery.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/plugins/ckeditor/samples/old/jquery.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin/plugins/ckeditor/samples/old/magicline/magicline.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/plugins/ckeditor/samples/old/magicline/magicline.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin/plugins/ckeditor/samples/old/readonly.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/plugins/ckeditor/samples/old/readonly.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin/plugins/ckeditor/samples/old/replacebyclass.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/plugins/ckeditor/samples/old/replacebyclass.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin/plugins/ckeditor/samples/old/replacebycode.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/plugins/ckeditor/samples/old/replacebycode.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin/plugins/ckeditor/samples/old/sample.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/plugins/ckeditor/samples/old/sample.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin/plugins/ckeditor/samples/old/sample.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/plugins/ckeditor/samples/old/sample.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin/plugins/ckeditor/samples/old/sample_posteddata.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/plugins/ckeditor/samples/old/sample_posteddata.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin/plugins/ckeditor/samples/old/tabindex.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/plugins/ckeditor/samples/old/tabindex.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin/plugins/ckeditor/samples/old/toolbar/toolbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/plugins/ckeditor/samples/old/toolbar/toolbar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin/plugins/ckeditor/samples/old/uicolor.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/plugins/ckeditor/samples/old/uicolor.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin/plugins/ckeditor/samples/old/uilanguages.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/plugins/ckeditor/samples/old/uilanguages.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin/plugins/ckeditor/samples/old/wysiwygarea/fullpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/plugins/ckeditor/samples/old/wysiwygarea/fullpage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin/plugins/ckeditor/samples/old/xhtmlstyle.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/plugins/ckeditor/samples/old/xhtmlstyle.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin/plugins/ckeditor/samples/toolbarconfigurator/css/fontello.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/plugins/ckeditor/samples/toolbarconfigurator/css/fontello.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin/plugins/ckeditor/samples/toolbarconfigurator/font/LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/plugins/ckeditor/samples/toolbarconfigurator/font/LICENSE.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin/plugins/ckeditor/samples/toolbarconfigurator/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/plugins/ckeditor/samples/toolbarconfigurator/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin/plugins/ckeditor/samples/toolbarconfigurator/lib/codemirror/codemirror.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/plugins/ckeditor/samples/toolbarconfigurator/lib/codemirror/codemirror.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin/plugins/ckeditor/samples/toolbarconfigurator/lib/codemirror/neo.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/plugins/ckeditor/samples/toolbarconfigurator/lib/codemirror/neo.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin/plugins/ckeditor/samples/toolbarconfigurator/lib/codemirror/show-hint.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/plugins/ckeditor/samples/toolbarconfigurator/lib/codemirror/show-hint.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin/plugins/ckeditor/skins/moono-lisa/dialog.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/plugins/ckeditor/skins/moono-lisa/dialog.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin/plugins/ckeditor/skins/moono-lisa/dialog_ie.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/plugins/ckeditor/skins/moono-lisa/dialog_ie.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin/plugins/ckeditor/skins/moono-lisa/dialog_ie8.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/plugins/ckeditor/skins/moono-lisa/dialog_ie8.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin/plugins/ckeditor/skins/moono-lisa/dialog_iequirks.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/plugins/ckeditor/skins/moono-lisa/dialog_iequirks.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin/plugins/ckeditor/skins/moono-lisa/editor.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/plugins/ckeditor/skins/moono-lisa/editor.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin/plugins/ckeditor/skins/moono-lisa/editor_gecko.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/plugins/ckeditor/skins/moono-lisa/editor_gecko.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin/plugins/ckeditor/skins/moono-lisa/editor_ie.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/plugins/ckeditor/skins/moono-lisa/editor_ie.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin/plugins/ckeditor/skins/moono-lisa/editor_ie8.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/plugins/ckeditor/skins/moono-lisa/editor_ie8.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin/plugins/ckeditor/skins/moono-lisa/editor_iequirks.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/plugins/ckeditor/skins/moono-lisa/editor_iequirks.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin/plugins/ckeditor/skins/moono-lisa/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/plugins/ckeditor/skins/moono-lisa/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin/plugins/ckeditor/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/plugins/ckeditor/styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/responsive-rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/responsive-rtl.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/responsive.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/responsive.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/stylesheet-rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/stylesheet-rtl.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/stylesheet-skin2.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/stylesheet-skin2.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/stylesheet-skin3.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/stylesheet-skin3.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/stylesheet-skin4.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/stylesheet-skin4.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/stylesheet.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/custom.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/jquery-2.1.1.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/jquery-2.1.1.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/jquery.dcjqaccordion.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/jquery.dcjqaccordion.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/jquery.easing-1.3.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/jquery.easing-1.3.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/jquery.elevatezoom.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/jquery.elevatezoom.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/swipebox/src/css/swipebox.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/swipebox/src/css/swipebox.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/revolution/css/layers.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/revolution/css/layers.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/revolution/css/navigation-skins/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/revolution/css/navigation-skins/custom.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/revolution/css/navigation-skins/dione.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/revolution/css/navigation-skins/dione.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/revolution/css/navigation-skins/erinyen.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/revolution/css/navigation-skins/erinyen.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/revolution/css/navigation-skins/gyges.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/revolution/css/navigation-skins/gyges.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/revolution/css/navigation-skins/hades.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/revolution/css/navigation-skins/hades.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/revolution/css/navigation-skins/hebe.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/revolution/css/navigation-skins/hebe.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/revolution/css/navigation-skins/hephaistos.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/revolution/css/navigation-skins/hephaistos.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/revolution/css/navigation-skins/hermes.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/revolution/css/navigation-skins/hermes.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/revolution/css/navigation-skins/hesperiden.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/revolution/css/navigation-skins/hesperiden.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/revolution/css/navigation-skins/persephone.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/revolution/css/navigation-skins/persephone.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/revolution/css/navigation-skins/uranus.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/revolution/css/navigation-skins/uranus.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/revolution/css/navigation-skins/zeus.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/revolution/css/navigation-skins/zeus.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/revolution/css/settings.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/revolution/css/settings.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/revolution/fonts/pe-icon-7-stroke/css/helper.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/revolution/fonts/pe-icon-7-stroke/css/helper.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/revolution/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/revolution/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/revolution/fonts/pe-icon-7-stroke/fonts/Pe-icon-7-stroke.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/revolution/fonts/pe-icon-7-stroke/fonts/Pe-icon-7-stroke.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/revolution/js/extensions/revolution.extension.actions.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/revolution/js/extensions/revolution.extension.actions.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/revolution/js/extensions/revolution.extension.carousel.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/revolution/js/extensions/revolution.extension.carousel.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/revolution/js/extensions/revolution.extension.kenburn.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/revolution/js/extensions/revolution.extension.kenburn.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/revolution/js/extensions/revolution.extension.layeranimation.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/revolution/js/extensions/revolution.extension.layeranimation.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/revolution/js/extensions/revolution.extension.migration.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/revolution/js/extensions/revolution.extension.migration.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/revolution/js/extensions/revolution.extension.navigation.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/revolution/js/extensions/revolution.extension.navigation.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/revolution/js/extensions/revolution.extension.parallax.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/revolution/js/extensions/revolution.extension.parallax.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/revolution/js/extensions/revolution.extension.slideanims.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/revolution/js/extensions/revolution.extension.slideanims.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/revolution/js/extensions/revolution.extension.video.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/revolution/js/extensions/revolution.extension.video.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/revolution/js/extensions/source/revolution.extension.actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/revolution/js/extensions/source/revolution.extension.actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/revolution/js/extensions/source/revolution.extension.carousel.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/revolution/js/extensions/source/revolution.extension.carousel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/revolution/js/extensions/source/revolution.extension.kenburn.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/revolution/js/extensions/source/revolution.extension.kenburn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/revolution/js/extensions/source/revolution.extension.layeranimation.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/revolution/js/extensions/source/revolution.extension.layeranimation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/revolution/js/extensions/source/revolution.extension.migration.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/revolution/js/extensions/source/revolution.extension.migration.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/revolution/js/extensions/source/revolution.extension.navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/revolution/js/extensions/source/revolution.extension.navigation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/revolution/js/extensions/source/revolution.extension.parallax.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/revolution/js/extensions/source/revolution.extension.parallax.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/revolution/js/extensions/source/revolution.extension.slideanims.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/revolution/js/extensions/source/revolution.extension.slideanims.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/revolution/js/extensions/source/revolution.extension.video.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/revolution/js/extensions/source/revolution.extension.video.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/revolution/js/jquery.themepunch.revolution.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/revolution/js/jquery.themepunch.revolution.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/revolution/js/jquery.themepunch.tools.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/revolution/js/jquery.themepunch.tools.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/revolution/js/source/jquery.themepunch.revolution.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/revolution/js/source/jquery.themepunch.revolution.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/revolution/js/source/jquery.themepunch.tools.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/revolution/js/source/jquery.themepunch.tools.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/AttrubuteComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/AttrubuteComponent.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/SelectCityComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/SelectCityComponent.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/about-us.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/cart.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/category.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/checkout.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/compare.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/contact-us.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/css/font-awesome/css/font-awesome.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/css/font-awesome/css/font-awesome.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/css/font-awesome/fonts/FontAwesome.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/css/font-awesome/fonts/fontawesome-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/css/font-awesome/fonts/fontawesome-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/css/font-awesome/fonts/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/css/font-awesome/fonts/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/css/font-awesome/fonts/fontawesome-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/css/font-awesome/less/animated.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/css/font-awesome/less/bordered-pulled.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/css/font-awesome/less/core.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/css/font-awesome/less/fixed-width.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/css/font-awesome/less/font-awesome.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/css/font-awesome/less/icons.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/css/font-awesome/less/larger.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/css/font-awesome/less/list.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/css/font-awesome/less/mixins.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/css/font-awesome/less/path.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/css/font-awesome/less/rotated-flipped.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/css/font-awesome/less/stacked.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/css/font-awesome/less/variables.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/css/font-awesome/scss/_animated.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/css/font-awesome/scss/_bordered-pulled.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/css/font-awesome/scss/_core.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/css/font-awesome/scss/_fixed-width.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/css/font-awesome/scss/_icons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/css/font-awesome/scss/_larger.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/css/font-awesome/scss/_list.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/css/font-awesome/scss/_mixins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/css/font-awesome/scss/_path.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/css/font-awesome/scss/_rotated-flipped.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/css/font-awesome/scss/_stacked.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/css/font-awesome/scss/_variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/css/font-awesome/scss/font-awesome.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/css/owl.carousel.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/css/owl.transitions.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/css/persian-fonts/BKoodakBold.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/css/persian-fonts/BKoodakBold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/css/persian-fonts/BKoodakBold.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/css/persian-fonts/WYekan.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/css/persian-fonts/WYekan.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/css/persian-fonts/WYekan.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/css/responsive-rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/css/responsive.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/css/stylesheet-rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/css/stylesheet-skin2.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/css/stylesheet-skin3.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/css/stylesheet-skin4.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/css/stylesheet.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/elements.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/faq.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/banner/cms-block.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/banner/responsive.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/banner/sample-banner-1-300X300.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/banner/sample-banner-1-400x200.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/banner/sample-banner-2-300X300.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/banner/sample-banner-2-400x200.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/banner/sample-banner-3-300X300.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/banner/sample-banner-3-400x200.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/banner/sample-banner-4-300X300.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/banner/sample-banner-4-400x150.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/banner/sample-banner-4-600X250.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/banner/sample-banner-5-400x150.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/banner/sample-banner-5-600X250.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/banner/small-banner-265x350.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/banner/small-banner1-265x350.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/bullet-dark-rtl.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/bullet-dark.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/favicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/ad.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/ae.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/af.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/ag.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/ai.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/al.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/am.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/an.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/ao.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/ar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/as.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/at.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/au.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/aw.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/ax.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/az.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/ba.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/bb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/bd.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/be.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/bf.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/bh.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/bi.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/bj.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/bm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/bn.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/bo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/br.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/bs.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/bt.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/bv.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/bw.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/by.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/bz.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/ca.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/cc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/cd.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/cf.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/cg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/ch.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/ci.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/ck.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/cl.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/cm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/cn.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/co.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/cr.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/cs.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/cu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/cv.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/cx.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/cy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/cz.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/de.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/dj.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/dk.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/dm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/do.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/dz.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/ec.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/ee.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/eg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/eh.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/england.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/er.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/es.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/et.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/fam.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/fi.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/fj.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/fk.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/fm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/fo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/fr.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/ga.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/gb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/gd.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/ge.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/gh.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/gi.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/gl.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/gm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/gn.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/gp.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/gq.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/gr.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/gs.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/gt.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/gu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/gw.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/gy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/hk.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/hn.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/hr.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/ht.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/hu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/id.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/ie.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/il.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/in.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/io.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/iq.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/ir.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/is.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/it.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/jm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/jo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/jp.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/ke.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/kg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/kh.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/ki.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/km.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/kn.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/kp.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/kr.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/kw.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/ky.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/kz.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/la.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/lb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/lc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/li.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/lk.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/lr.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/ls.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/lt.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/lu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/lv.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/ly.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/ma.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/mc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/md.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/mg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/mh.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/mk.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/ml.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/mm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/mn.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/mo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/mp.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/mq.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/mr.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/ms.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/mt.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/mu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/mv.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/mw.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/mx.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/my.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/mz.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/na.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/nc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/ne.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/nf.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/ng.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/ni.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/nl.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/no.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/np.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/nr.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/nu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/nz.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/om.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/pa.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/pe.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/pf.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/pg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/ph.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/pk.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/pl.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/pm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/pn.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/pr.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/ps.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/pt.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/pw.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/py.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/qa.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/ro.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/ru.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/rw.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/sa.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/sb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/sc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/scotland.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/sd.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/se.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/sg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/sh.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/si.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/sk.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/sl.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/sm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/sn.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/so.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/sr.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/st.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/sv.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/sy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/sz.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/tc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/td.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/tf.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/tg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/th.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/tj.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/tk.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/tl.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/tm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/tn.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/to.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/tr.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/tt.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/tv.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/tw.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/tz.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/ua.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/ug.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/um.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/us.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/uy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/uz.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/va.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/vc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/ve.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/vg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/vi.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/vn.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/vu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/wales.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/wf.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/ws.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/ye.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/yt.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/za.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/zm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/flags/zw.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/grabbing.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/logo-small.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/no_image.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/patterns/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/patterns/10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/patterns/11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/patterns/12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/patterns/13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/patterns/14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/patterns/15.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/patterns/16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/patterns/17.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/patterns/18.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/patterns/19.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/patterns/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/patterns/20.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/patterns/21.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/patterns/22.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/patterns/23.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/patterns/24.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/patterns/25.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/patterns/26.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/patterns/27.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/patterns/28.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/patterns/29.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/patterns/3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/patterns/30.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/patterns/31.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/patterns/32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/patterns/33.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/patterns/34.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/patterns/35.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/patterns/36.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/patterns/37.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/patterns/38.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/patterns/39.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/patterns/4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/patterns/40.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/patterns/41.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/patterns/42.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/patterns/43.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/patterns/44.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/patterns/45.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/patterns/46.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/patterns/47.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/patterns/48.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/patterns/49.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/patterns/5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/patterns/50.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/patterns/51.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/patterns/52.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/patterns/53.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/patterns/6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/patterns/7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/patterns/8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/patterns/9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/payment/payment_2checkout.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/payment/payment_american.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/payment/payment_cirrus.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/payment/payment_delta.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/payment/payment_direct.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/payment/payment_discover.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/payment/payment_ebay.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/payment/payment_google.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/payment/payment_maestro.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/payment/payment_mastercard.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/payment/payment_moneybookers.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/payment/payment_paypal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/payment/payment_sagepay.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/payment/payment_solo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/payment/payment_switch.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/payment/payment_visa.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/payment/payment_western_union.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/plus.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/FinePix-Long-Zoom-Camera-200x200.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/FinePix-Long-Zoom-Camera-220x330.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/FinePix-Long-Zoom-Camera-50x50.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/FinePix-Long-Zoom-Camera-50x75.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/apple_cinema_30-200x200.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/apple_cinema_30-220x330.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/apple_cinema_30-50x50.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/apple_cinema_30-50x75.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/apple_logo-100x100.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/apple_logo-60x60.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/canon_eos_5d_1-200x200.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/canon_eos_5d_1-220x330.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/canon_logo-100x100.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/canon_logo-60x60.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/hp_2-200x200.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/hp_2-220x330.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/hp_3-200x200.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/hp_3-220x330.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/hp_logo-60x60.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/htc_logo-60x60.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/iphone_1-200x200.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/iphone_1-220x330.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/iphone_1-50x50.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/iphone_1-50x75.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/iphone_6-200x200.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/iphone_6-220x330.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/iphone_6-50x50.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/iphone_6-50x75.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/ipod_classic_1-200x200.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/ipod_classic_1-220x330.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/ipod_nano_1-200x200.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/ipod_nano_1-220x330.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/ipod_shuffle_1-200x200.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/ipod_shuffle_1-220x330.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/ipod_touch_1-200x200.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/ipod_touch_1-220x330.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/macbook_1-200x200.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/macbook_1-220x330.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/macbook_1-50x50.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/macbook_1-50x75.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/macbook_2-200x200.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/macbook_2-220x330.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/macbook_2-50x50.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/macbook_2-50x75.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/macbook_3-200x200.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/macbook_3-220x330.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/macbook_3-50x50.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/macbook_3-50x75.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/macbook_4-200x200.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/macbook_4-220x330.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/macbook_4-50x50.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/macbook_4-50x75.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/macbook_5-200x200.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/macbook_5-220x330.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/macbook_5-50x50.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/macbook_5-50x75.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/macbook_air_1-200x200.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/macbook_air_1-220x330.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/macbook_air_1-350x350.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/macbook_air_1-350x525.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/macbook_air_1-500x500.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/macbook_air_1-50x50.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/macbook_air_1-50x75.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/macbook_air_1-600x900.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/macbook_air_1-66x66.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/macbook_air_1-66x99.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/macbook_air_1-90x135.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/macbook_air_1-90x90.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/macbook_air_2-350x350.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/macbook_air_2-350x525.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/macbook_air_2-500x500.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/macbook_air_2-600x900.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/macbook_air_2-66x66.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/macbook_air_2-66x99.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/macbook_air_3-350x350.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/macbook_air_3-350x525.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/macbook_air_3-500x500.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/macbook_air_3-600x900.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/macbook_air_3-66x66.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/macbook_air_3-66x99.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/macbook_air_4-350x350.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/macbook_air_4-350x525.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/macbook_air_4-500x500.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/macbook_air_4-600x900.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/macbook_air_4-66x66.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/macbook_air_4-66x99.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/macbook_pro_1-200x200.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/macbook_pro_1-220x330.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/macbook_pro_1-50x50.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/macbook_pro_1-50x75.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/macbook_pro_1-90x135 - Copy.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/macbook_pro_1-90x90.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/nikon_d300_1-200x200.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/nikon_d300_1-220x330.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/nikon_d300_1-50x50.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/nikon_d300_1-50x75.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/nikon_d300_4-200x200.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/nikon_d300_4-220x330.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/nikon_d300_4-50x50.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/nikon_d300_4-50x75.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/nikon_d300_5-200x200.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/nikon_d300_5-220x330.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/nikon_d300_5-50x50.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/nikon_d300_5-50x75.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/palm_logo-60x60.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/palm_treo_pro_1-200x200.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/palm_treo_pro_1-220x330.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/samsung_tab_1-200x200.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/samsung_tab_1-220x330.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/samsung_tab_1-50x50.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/samsung_tab_1-50x75.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/samsung_tab_1-90x135.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/samsung_tab_1-90x90.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/sony_logo-60x60.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/sony_vaio_1-200x200.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/sony_vaio_1-220x330.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/sony_vaio_1-50x50.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/sony_vaio_1-50x75.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/product/store_location-275x180.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/progress.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/slider/banner-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/slider/banner-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/socialicons/bebo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/socialicons/blogger.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/socialicons/delicious.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/socialicons/digg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/socialicons/dopplr.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/socialicons/ember.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/socialicons/evernote.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/socialicons/facebook.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/socialicons/flickr.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/socialicons/forrst.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/socialicons/friendfeed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/socialicons/google_plus.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/socialicons/googletalk.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/socialicons/grooveshark.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/socialicons/instagram.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/socialicons/lastfm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/socialicons/linkedin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/socialicons/mixx.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/socialicons/myspace.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/socialicons/newsvine.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/socialicons/openid.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/socialicons/pandora.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/socialicons/picasa.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/socialicons/pinterest.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/socialicons/posterous.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/socialicons/readernaut.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/socialicons/reddit.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/socialicons/rss.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/socialicons/sharethis.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/socialicons/skype.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/socialicons/spotify.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/socialicons/stumbleupon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/socialicons/technorati.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/socialicons/tumblr.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/socialicons/twitter.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/socialicons/viadeo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/socialicons/viddler.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/socialicons/vimeo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/socialicons/virb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/socialicons/vk.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/socialicons/xing.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/socialicons/yahoobuzz.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/socialicons/yelp.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/image/socialicons/youtube.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/js/bootstrap/css/bootstrap-flipped.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/js/bootstrap/css/bootstrap-flipped.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/js/bootstrap/css/bootstrap-flipped.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/js/bootstrap/css/bootstrap-rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/js/bootstrap/css/bootstrap-rtl.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/js/bootstrap/css/bootstrap-rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/js/bootstrap/css/bootstrap-theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/js/bootstrap/css/bootstrap-theme.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/js/bootstrap/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/js/bootstrap/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/js/bootstrap/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/js/bootstrap/fonts/glyphicons-halflings-regular.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/js/bootstrap/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/js/bootstrap/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/js/bootstrap/fonts/glyphicons-halflings-regular.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/js/bootstrap/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/js/bootstrap/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/js/custom.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/js/jquery-2.1.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/js/jquery.dcjqaccordion.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/js/jquery.dcjqaccordion.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/js/jquery.easing-1.3.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/js/jquery.elevateZoom-3.0.8.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/js/jquery.elevatezoom.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/js/owl.carousel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/js/owl.carousel.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/js/swipebox/lib/ios-orientationchange-fix.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/js/swipebox/lib/jquery-2.1.0.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/js/swipebox/src/css/swipebox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/js/swipebox/src/css/swipebox.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/js/swipebox/src/img/icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/js/swipebox/src/img/icons.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/js/swipebox/src/img/loader.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/js/swipebox/src/js/jquery.swipebox.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/js/swipebox/src/js/jquery.swipebox.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/product.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/register.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/revolution/assets/coloredbg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/revolution/assets/gridtile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/revolution/assets/gridtile_3x3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/revolution/assets/gridtile_3x3_white.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/revolution/assets/gridtile_white.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/revolution/assets/loader.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/revolution/assets/sources/fb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/revolution/assets/sources/fr.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/revolution/assets/sources/ig.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/revolution/assets/sources/post.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/revolution/assets/sources/revolution_slide1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/revolution/assets/sources/revolution_slide2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/revolution/assets/sources/tw.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/revolution/assets/sources/vm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/revolution/assets/sources/wc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/revolution/assets/sources/yt.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/revolution/css/closedhand.cur" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/revolution/css/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/revolution/css/layers.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/revolution/css/navigation-skins/ares.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/revolution/css/navigation-skins/custom.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/revolution/css/navigation-skins/dione.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/revolution/css/navigation-skins/erinyen.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/revolution/css/navigation-skins/gyges.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/revolution/css/navigation-skins/hades.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/revolution/css/navigation-skins/hebe.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/revolution/css/navigation-skins/hephaistos.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/revolution/css/navigation-skins/hermes.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/revolution/css/navigation-skins/hesperiden.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/revolution/css/navigation-skins/metis.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/revolution/css/navigation-skins/persephone.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/revolution/css/navigation-skins/uranus.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/revolution/css/navigation-skins/zeus.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/revolution/css/navigation.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/revolution/css/openhand.cur" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/revolution/css/settings.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/revolution/fonts/font-awesome/css/font-awesome.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/revolution/fonts/font-awesome/css/font-awesome.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/revolution/fonts/font-awesome/fonts/FontAwesome.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/revolution/fonts/font-awesome/fonts/fontawesome-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/revolution/fonts/font-awesome/fonts/fontawesome-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/revolution/fonts/font-awesome/fonts/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/revolution/fonts/font-awesome/fonts/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/revolution/fonts/font-awesome/fonts/fontawesome-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/revolution/fonts/font-awesome/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/revolution/fonts/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/revolution/fonts/pe-icon-7-stroke/css/helper.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/revolution/fonts/pe-icon-7-stroke/css/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/revolution/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/revolution/fonts/pe-icon-7-stroke/fonts/Pe-icon-7-stroke.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/revolution/fonts/pe-icon-7-stroke/fonts/Pe-icon-7-stroke.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/revolution/fonts/pe-icon-7-stroke/fonts/Pe-icon-7-stroke.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/revolution/fonts/pe-icon-7-stroke/fonts/Pe-icon-7-stroke.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/revolution/fonts/pe-icon-7-stroke/fonts/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/revolution/fonts/pe-icon-7-stroke/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/revolution/fonts/revicons/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/revolution/fonts/revicons/revicons.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/revolution/fonts/revicons/revicons.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/revolution/fonts/revicons/revicons.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/revolution/fonts/revicons/revicons.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/revolution/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/revolution/info.cfg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/revolution/js/extensions/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/revolution/js/extensions/revolution.extension.actions.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/revolution/js/extensions/revolution.extension.carousel.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/revolution/js/extensions/revolution.extension.kenburn.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/revolution/js/extensions/revolution.extension.layeranimation.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/revolution/js/extensions/revolution.extension.migration.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/revolution/js/extensions/revolution.extension.navigation.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/revolution/js/extensions/revolution.extension.parallax.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/revolution/js/extensions/revolution.extension.slideanims.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/revolution/js/extensions/revolution.extension.video.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/revolution/js/extensions/source/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/revolution/js/extensions/source/revolution.extension.actions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/revolution/js/extensions/source/revolution.extension.carousel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/revolution/js/extensions/source/revolution.extension.kenburn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/revolution/js/extensions/source/revolution.extension.layeranimation.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/revolution/js/extensions/source/revolution.extension.migration.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/revolution/js/extensions/source/revolution.extension.navigation.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/revolution/js/extensions/source/revolution.extension.parallax.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/revolution/js/extensions/source/revolution.extension.slideanims.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/revolution/js/extensions/source/revolution.extension.video.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/revolution/js/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/revolution/js/jquery.themepunch.enablelog.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/revolution/js/jquery.themepunch.revolution.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/revolution/js/jquery.themepunch.tools.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/revolution/js/source/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/revolution/js/source/jquery.themepunch.enablelog.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/revolution/js/source/jquery.themepunch.revolution.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/revolution/js/source/jquery.themepunch.tools.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/revolution/php/facebook/class-facebook.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/revolution/php/flickr/class-flickr.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/revolution/php/instagram/class-instagram.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/revolution/php/twitter/RestApi.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/revolution/php/twitter/class-twitter.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/revolution/php/twitter/connection/Application.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/revolution/php/twitter/connection/ConnectionAbstract.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/revolution/php/twitter/connection/User.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/revolution/php/vimeo/class-vimeo.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/revolution/php/youtube/class-youtube.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/search.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/sitemap.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/market-shop/wishlist.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/CHANGES.md" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/CHANGES.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/LICENSE.md" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/LICENSE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/build-config.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/build-config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/contents.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/contents.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/af.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/af.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/ar.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/ar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/bg.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/bg.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/bn.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/bn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/bs.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/bs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/ca.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/ca.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/cs.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/cs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/cy.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/cy.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/da.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/da.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/de-ch.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/de-ch.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/de.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/de.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/el.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/el.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/en-au.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/en-au.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/en-ca.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/en-ca.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/en-gb.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/en-gb.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/en.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/en.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/eo.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/eo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/es.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/es.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/et.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/et.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/eu.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/eu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/fa.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/fa.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/fi.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/fi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/fo.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/fo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/fr-ca.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/fr-ca.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/fr.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/fr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/gl.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/gl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/gu.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/gu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/he.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/he.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/hi.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/hi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/hr.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/hr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/hu.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/hu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/id.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/id.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/is.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/is.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/it.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/it.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/ja.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/ja.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/ka.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/ka.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/km.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/km.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/ko.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/ko.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/ku.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/ku.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/lt.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/lt.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/lv.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/lv.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/mk.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/mk.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/mn.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/mn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/ms.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/ms.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/nb.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/nb.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/nl.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/nl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/no.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/no.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/pl.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/pl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/pt-br.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/pt-br.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/pt.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/pt.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/ro.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/ro.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/ru.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/ru.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/si.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/si.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/sk.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/sk.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/sl.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/sl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/sq.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/sq.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/sr-latn.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/sr-latn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/sr.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/sr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/sv.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/sv.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/th.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/th.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/tr.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/tr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/tt.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/tt.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/ug.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/ug.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/uk.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/uk.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/vi.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/vi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/zh-cn.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/zh-cn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/zh.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/lang/zh.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/_translationstatus.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/plugins/a11yhelp/dialogs/lang/_translationstatus.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/plugins/scayt/CHANGELOG.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/plugins/scayt/LICENSE.md" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/plugins/scayt/LICENSE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/plugins/scayt/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/plugins/scayt/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/plugins/scayt/dialogs/toolbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/plugins/scayt/dialogs/toolbar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/plugins/specialchar/dialogs/lang/_translationstatus.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/plugins/specialchar/dialogs/lang/_translationstatus.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/plugins/wsc/LICENSE.md" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/plugins/wsc/LICENSE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/plugins/wsc/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/plugins/wsc/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/plugins/wsc/dialogs/ciframe.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/plugins/wsc/dialogs/ciframe.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/plugins/wsc/dialogs/tmpFrameset.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/plugins/wsc/dialogs/tmpFrameset.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/plugins/wsc/dialogs/wsc.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/plugins/wsc/dialogs/wsc.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/samples/css/samples.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/samples/css/samples.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/samples/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/samples/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/samples/js/sample.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/samples/js/sample.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/samples/old/ajax.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/samples/old/ajax.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/samples/old/api.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/samples/old/api.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/samples/old/appendto.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/samples/old/appendto.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/samples/old/assets/outputxhtml/outputxhtml.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/samples/old/assets/outputxhtml/outputxhtml.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/samples/old/assets/posteddata.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/samples/old/assets/posteddata.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/samples/old/datafiltering.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/samples/old/datafiltering.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/samples/old/dialog/assets/my_dialog.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/samples/old/dialog/assets/my_dialog.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/samples/old/dialog/dialog.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/samples/old/dialog/dialog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/samples/old/divreplace.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/samples/old/divreplace.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/samples/old/enterkey/enterkey.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/samples/old/enterkey/enterkey.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/samples/old/htmlwriter/outputforflash.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/samples/old/htmlwriter/outputforflash.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/samples/old/htmlwriter/outputhtml.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/samples/old/htmlwriter/outputhtml.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/samples/old/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/samples/old/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/samples/old/inlineall.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/samples/old/inlineall.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/samples/old/inlinebycode.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/samples/old/inlinebycode.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/samples/old/inlinetextarea.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/samples/old/inlinetextarea.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/samples/old/jquery.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/samples/old/jquery.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/samples/old/magicline/magicline.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/samples/old/magicline/magicline.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/samples/old/readonly.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/samples/old/readonly.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/samples/old/replacebyclass.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/samples/old/replacebyclass.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/samples/old/replacebycode.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/samples/old/replacebycode.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/samples/old/sample.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/samples/old/sample.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/samples/old/sample.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/samples/old/sample.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/samples/old/sample_posteddata.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/samples/old/sample_posteddata.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/samples/old/tabindex.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/samples/old/tabindex.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/samples/old/toolbar/toolbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/samples/old/toolbar/toolbar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/samples/old/uicolor.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/samples/old/uicolor.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/samples/old/uilanguages.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/samples/old/uilanguages.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/samples/old/wysiwygarea/fullpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/samples/old/wysiwygarea/fullpage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/samples/old/xhtmlstyle.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/samples/old/xhtmlstyle.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/samples/toolbarconfigurator/css/fontello.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/samples/toolbarconfigurator/css/fontello.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/samples/toolbarconfigurator/font/LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/samples/toolbarconfigurator/font/LICENSE.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/samples/toolbarconfigurator/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/samples/toolbarconfigurator/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/samples/toolbarconfigurator/lib/codemirror/codemirror.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/samples/toolbarconfigurator/lib/codemirror/codemirror.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/samples/toolbarconfigurator/lib/codemirror/neo.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/samples/toolbarconfigurator/lib/codemirror/neo.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/samples/toolbarconfigurator/lib/codemirror/show-hint.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/samples/toolbarconfigurator/lib/codemirror/show-hint.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/skins/moono/dialog.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/skins/moono/dialog.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/skins/moono/dialog_ie.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/skins/moono/dialog_ie.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/skins/moono/dialog_ie7.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/skins/moono/dialog_ie7.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/skins/moono/dialog_ie8.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/skins/moono/dialog_ie8.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/skins/moono/dialog_iequirks.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/skins/moono/dialog_iequirks.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/skins/moono/editor.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/skins/moono/editor.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/skins/moono/editor_gecko.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/skins/moono/editor_gecko.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/skins/moono/editor_ie.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/skins/moono/editor_ie.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/skins/moono/editor_ie7.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/skins/moono/editor_ie7.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/skins/moono/editor_ie8.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/skins/moono/editor_ie8.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/skins/moono/editor_iequirks.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/skins/moono/editor_iequirks.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/skins/moono/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/skins/moono/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/template/plugins/ckeditor/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/template/plugins/ckeditor/styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/products/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/products/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontend/cart/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/cart/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontend/home/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/home/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontend/layout/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/layout/master.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/notes.htm" beforeDir="false" />
+>>>>>>> a1c10105d8d61fcde64b13dbc79d2e90af60fb4b
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,7 +1019,11 @@
     <session id="1405428938">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+<<<<<<< HEAD
           <entry key="project.closed" value="18" />
+=======
+          <entry key="project.closed" value="17" />
+>>>>>>> a1c10105d8d61fcde64b13dbc79d2e90af60fb4b
           <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.21" value="1" />
           <entry key="project.open.time.28" value="2" />
@@ -53,7 +1043,11 @@
           <entry key="project.open.time.51" value="1" />
           <entry key="project.open.time.64" value="1" />
           <entry key="project.open.time.8" value="1" />
+<<<<<<< HEAD
           <entry key="project.opened" value="23" />
+=======
+          <entry key="project.opened" value="22" />
+>>>>>>> a1c10105d8d61fcde64b13dbc79d2e90af60fb4b
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -61,25 +1055,41 @@
           <entry key="css" value="14" />
           <entry key="env" value="2" />
           <entry key="gif" value="2" />
+<<<<<<< HEAD
           <entry key="html" value="9" />
+=======
+          <entry key="html" value="8" />
+>>>>>>> a1c10105d8d61fcde64b13dbc79d2e90af60fb4b
           <entry key="jpg" value="8" />
           <entry key="js" value="21" />
           <entry key="json" value="2" />
           <entry key="map" value="1" />
+<<<<<<< HEAD
           <entry key="php" value="355" />
+=======
+          <entry key="php" value="345" />
+>>>>>>> a1c10105d8d61fcde64b13dbc79d2e90af60fb4b
           <entry key="rnc" value="1" />
           <entry key="vue" value="22" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
+<<<<<<< HEAD
           <entry key="Blade" value="136" />
+=======
+          <entry key="Blade" value="130" />
+>>>>>>> a1c10105d8d61fcde64b13dbc79d2e90af60fb4b
           <entry key="CSS" value="14" />
-          <entry key="HTML" value="9" />
+          <entry key="HTML" value="8" />
           <entry key="Image" value="10" />
           <entry key="JSON" value="2" />
           <entry key="JavaScript" value="21" />
+<<<<<<< HEAD
           <entry key="PHP" value="219" />
+=======
+          <entry key="PHP" value="215" />
+>>>>>>> a1c10105d8d61fcde64b13dbc79d2e90af60fb4b
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="RNG Compact" value="1" />
           <entry key="SourceMap" value="1" />
@@ -93,17 +1103,29 @@
           <entry key="env" value="13" />
           <entry key="html" value="78" />
           <entry key="js" value="223" />
+<<<<<<< HEAD
           <entry key="php" value="15391" />
+=======
+          <entry key="php" value="14745" />
+>>>>>>> a1c10105d8d61fcde64b13dbc79d2e90af60fb4b
           <entry key="vue" value="3482" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
+<<<<<<< HEAD
           <entry key="Blade" value="6963" />
           <entry key="CSS" value="107" />
           <entry key="HTML" value="83" />
           <entry key="JavaScript" value="223" />
           <entry key="PHP" value="8423" />
+=======
+          <entry key="Blade" value="6462" />
+          <entry key="CSS" value="107" />
+          <entry key="HTML" value="83" />
+          <entry key="JavaScript" value="223" />
+          <entry key="PHP" value="8278" />
+>>>>>>> a1c10105d8d61fcde64b13dbc79d2e90af60fb4b
           <entry key="PLAIN_TEXT" value="15" />
           <entry key="Vue.js" value="3482" />
         </counts>
@@ -111,6 +1133,7 @@
     </session>
   </component>
   <component name="FileEditorManager">
+<<<<<<< HEAD
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/frontend/products/index.blade.php">
@@ -165,6 +1188,14 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="396">
               <caret line="51" column="168" selection-start-line="51" selection-start-column="108" selection-end-line="51" selection-end-column="168" />
+=======
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/frontend/home/index.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="369">
+              <caret line="36" column="103" selection-start-line="36" selection-start-column="103" selection-end-line="36" selection-end-column="103" />
+>>>>>>> a1c10105d8d61fcde64b13dbc79d2e90af60fb4b
             </state>
           </provider>
         </entry>
@@ -208,10 +1239,13 @@
       <find>132000</find>
       <find>افزودن به سبد</find>
       <find>session</find>
+<<<<<<< HEAD
       <find>افزودن</find>
       <find>dis</find>
       <find>gro</find>
       <find>محصولات مرتبط</find>
+=======
+>>>>>>> a1c10105d8d61fcde64b13dbc79d2e90af60fb4b
     </findStrings>
     <replaceStrings>
       <replace />
@@ -227,6 +1261,13 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+<<<<<<< HEAD
+=======
+        <option value="$PROJECT_DIR$/webpack.mix.js" />
+        <option value="$PROJECT_DIR$/public/admin/js/app.js" />
+        <option value="$PROJECT_DIR$/public/admin/dist/js/pages/dashboard.js" />
+        <option value="$PROJECT_DIR$/resources/views/admin/layout/master.blade.php" />
+>>>>>>> a1c10105d8d61fcde64b13dbc79d2e90af60fb4b
         <option value="$PROJECT_DIR$/app/AttributeGroup.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_04_07_153028_modyfy_products_table.php" />
         <option value="$PROJECT_DIR$/app/Category.php" />
@@ -234,6 +1275,11 @@
         <option value="$PROJECT_DIR$/database/migrations/2019_04_03_091415_crate_product_table.php" />
         <option value="$PROJECT_DIR$/resources/js/components/123.vue" />
         <option value="$PROJECT_DIR$/resources/js/components/AttributeComponent1.vue" />
+<<<<<<< HEAD
+=======
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Backend/AttributeValueController.php" />
+        <option value="$PROJECT_DIR$/app/AttributeValue.php" />
+>>>>>>> a1c10105d8d61fcde64b13dbc79d2e90af60fb4b
         <option value="$PROJECT_DIR$/app/Product.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/products/create.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/products/edit.blade.php" />
@@ -271,6 +1317,7 @@
         <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/resources/views/frontend/layout/master.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/resources/views/frontend/cart/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/frontend/home/index.blade.php" />
         <option value="$PROJECT_DIR$/app/AttributeValue.php" />
@@ -278,6 +1325,9 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/Backend/AttributeValueController.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/attributes-value/index.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/frontend/products/index.blade.php" />
+=======
+        <option value="$PROJECT_DIR$/resources/views/frontend/home/index.blade.php" />
+>>>>>>> a1c10105d8d61fcde64b13dbc79d2e90af60fb4b
       </list>
     </option>
   </component>
@@ -403,6 +1453,7 @@
             <path>
               <item name="KharidChi" type="b2602c69:ProjectViewProjectNode" />
               <item name="KharidChi" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
               <item name="app" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -448,17 +1499,20 @@
             <path>
               <item name="KharidChi" type="b2602c69:ProjectViewProjectNode" />
               <item name="KharidChi" type="462c0819:PsiDirectoryNode" />
+=======
+>>>>>>> a1c10105d8d61fcde64b13dbc79d2e90af60fb4b
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="KharidChi" type="b2602c69:ProjectViewProjectNode" />
               <item name="KharidChi" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
               <item name="admin" type="462c0819:PsiDirectoryNode" />
               <item name="attributes-value" type="462c0819:PsiDirectoryNode" />
+=======
+>>>>>>> a1c10105d8d61fcde64b13dbc79d2e90af60fb4b
             </path>
             <path>
               <item name="KharidChi" type="b2602c69:ProjectViewProjectNode" />
@@ -466,6 +1520,7 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="frontend" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
             </path>
             <path>
               <item name="KharidChi" type="b2602c69:ProjectViewProjectNode" />
@@ -482,6 +1537,8 @@
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="frontend" type="462c0819:PsiDirectoryNode" />
               <item name="home" type="462c0819:PsiDirectoryNode" />
+=======
+>>>>>>> a1c10105d8d61fcde64b13dbc79d2e90af60fb4b
             </path>
             <path>
               <item name="KharidChi" type="b2602c69:ProjectViewProjectNode" />
@@ -489,7 +1546,11 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="frontend" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
               <item name="layout" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="home" type="462c0819:PsiDirectoryNode" />
+>>>>>>> a1c10105d8d61fcde64b13dbc79d2e90af60fb4b
             </path>
             <path>
               <item name="KharidChi" type="b2602c69:ProjectViewProjectNode" />
@@ -497,7 +1558,11 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="frontend" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
               <item name="products" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="layout" type="462c0819:PsiDirectoryNode" />
+>>>>>>> a1c10105d8d61fcde64b13dbc79d2e90af60fb4b
             </path>
           </expand>
           <select />
@@ -576,18 +1641,29 @@
       <workItem from="1554782369894" duration="30273000" />
       <workItem from="1554885291061" duration="21835000" />
       <workItem from="1554960421212" duration="25835000" />
+<<<<<<< HEAD
       <workItem from="1555301158160" duration="8234000" />
+=======
+>>>>>>> a1c10105d8d61fcde64b13dbc79d2e90af60fb4b
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="283645000" />
+=======
+    <option name="totallyTimeSpent" value="275088000" />
+>>>>>>> a1c10105d8d61fcde64b13dbc79d2e90af60fb4b
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
+<<<<<<< HEAD
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2553305" />
+=======
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25266525" />
+>>>>>>> a1c10105d8d61fcde64b13dbc79d2e90af60fb4b
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -636,6 +1712,7 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/resources/views/admin/products/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -884,11 +1961,282 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="478">
           <caret line="27" column="37" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
+=======
+    <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/partials/form-errors.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
+    <entry file="file://$USER_HOME$/Desktop/102-Digistyle-Full-Laravel-Project__fileroxo/resources/views/admin/categories/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="19" column="22" lean-forward="true" selection-start-line="15" selection-start-column="16" selection-end-line="19" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/attributes/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="25" column="22" lean-forward="true" selection-start-line="16" selection-start-column="15" selection-end-line="25" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/categories/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1364">
+          <caret line="62" column="14" selection-start-line="62" selection-start-column="14" selection-end-line="62" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/categories/index-setting.blade.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/102-Digistyle-Full-Laravel-Project__fileroxo/app/Http/Controllers/Backend/ProductController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="638">
+          <caret line="148" column="49" lean-forward="true" selection-start-line="124" selection-start-column="6" selection-end-line="148" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/products/edit.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1826">
+          <caret line="83" column="14" selection-start-line="83" selection-start-column="14" selection-end-line="83" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/products/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="17" column="47" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Backend/AttributeGroupController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="21" column="47" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_04_02_072255_create_attributes_value.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="19" column="111" lean-forward="true" selection-start-line="19" selection-start-column="89" selection-end-line="19" selection-end-column="111" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_04_03_093538_ad_foriegn_to_category.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="17" column="100" selection-start-line="17" selection-start-column="100" selection-end-line="17" selection-end-column="100" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_04_07_152402_create_table_attribute_product_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="20" column="97" selection-start-line="20" selection-start-column="97" selection-end-line="20" selection-end-column="97" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_04_07_155056_create_table_category_product_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="20" column="97" selection-start-line="20" selection-start-column="97" selection-end-line="20" selection-end-column="97" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/market-shop/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="15" lean-forward="true" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Backend/ProductController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="164" column="6" selection-start-line="164" selection-start-column="6" selection-end-line="164" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/102-Digistyle-Full-Laravel-Project__fileroxo/database/migrations/2019_03_10_140205_create_coupon_user.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Product.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="23" column="50" selection-start-line="23" selection-start-column="50" selection-end-line="23" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_04_03_091415_crate_product_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="43" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/stylesheet-skin2.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="97" column="53" lean-forward="true" selection-start-line="97" selection-start-column="53" selection-end-line="97" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Frontend/HomeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="27" column="63" selection-start-line="27" selection-start-column="63" selection-end-line="27" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Address.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="742">
+          <caret line="46" column="5" lean-forward="true" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Photo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" column="5" lean-forward="true" selection-start-line="10" selection-start-column="3" selection-end-line="13" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/bootstrap/css/bootstrap-rtl.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/bootstrap/css/bootstrap-rtl.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="370" selection-start-line="8" selection-start-column="370" selection-end-line="8" selection-end-column="370" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/bootstrap/css/bootstrap-rtl.css.map">
+      <provider editor-type-id="sourcemapFileViewerProvider" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="18775" selection-start-column="18775" selection-end-column="18775" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/stylesheet-rtl.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="701">
+          <caret line="228" column="5" selection-start-line="228" selection-start-column="5" selection-end-line="228" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/components/AttrubuteComponent.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="638">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Backend/CategoryController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="632">
+          <caret line="123" column="47" lean-forward="true" selection-start-line="120" selection-start-column="7" selection-end-line="123" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Category.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/City.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Province.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_04_07_155456_create_table_photo_product_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_04_11_083303_create_address_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/auth/register.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="676">
+          <caret line="112" selection-start-line="112" selection-end-line="112" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/market-shop/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="677">
+          <caret line="455" column="16" lean-forward="true" selection-start-line="436" selection-start-column="7" selection-end-line="455" selection-end-column="16" />
+          <folding>
+            <element signature="n#div#0;n#header#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Frontend/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/js/components/SelectCityComponent.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-710">
+          <caret line="6" column="50" selection-start-line="6" selection-start-column="50" selection-end-line="6" selection-end-column="50" />
+>>>>>>> a1c10105d8d61fcde64b13dbc79d2e90af60fb4b
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="198">
           <caret line="18" column="3" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
         </state>
@@ -960,6 +2308,81 @@
           <folding>
             <element signature="e#16658#18449#0#HTML" />
           </folding>
+=======
+        <state relative-caret-position="566">
+          <caret line="75" column="38" selection-start-line="75" selection-start-column="38" selection-end-line="75" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="20" column="37" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/market-shop/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="501" column="24" selection-start-line="501" selection-start-column="24" selection-end-line="501" selection-end-column="24" />
+          <folding>
+            <element signature="e#39001#39006#0" expanded="true" />
+            <element signature="n#div#5;n#fieldset#1;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/auth/login.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="106" column="46" selection-start-line="106" selection-start-column="46" selection-end-line="106" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="618">
+          <caret line="63" column="102" selection-start-line="63" selection-start-column="102" selection-end-line="63" selection-end-column="102" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/frontend/profile/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="478">
+          <caret line="27" column="37" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="18" column="3" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/frontend/layout/master.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2838">
+          <caret line="129" column="54" lean-forward="true" selection-start-line="129" selection-start-column="54" selection-end-line="129" selection-end-column="54" />
+          <folding>
+            <element signature="n#style#0;n#form#0;n#tr#0;n#tbody#0;n#table#0;n#li#0;n#ul#0;n#div#0;n#div#1;n#div#0;n#div#0;n#header#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#11862#11868#1#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/frontend/home/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="36" column="103" selection-start-line="36" selection-start-column="103" selection-end-line="36" selection-end-column="103" />
+>>>>>>> a1c10105d8d61fcde64b13dbc79d2e90af60fb4b
         </state>
       </provider>
     </entry>
