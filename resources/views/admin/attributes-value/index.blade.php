@@ -40,7 +40,7 @@
                             <tr>
                                 <td class="text-center">{{$attribute->id}}</td>
                                 <td class="text-center">{{$attribute->title}}</td>
-                                <td class="text-center">{{$attribute->attributesGroup->title}}</td>
+                                <td class="text-center">{{$attribute->attributeGroup->title}}</td>
                                 <td class="text-center">
                                     <div class="display-inline-block">
                                         <form method="post" action="/administrator/attributes-value/{{$attribute->id}}">

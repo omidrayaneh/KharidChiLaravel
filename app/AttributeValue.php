@@ -8,7 +8,7 @@ class AttributeValue extends Model
 {
     protected $table='attributesValue';
 
-    public function attributesGroup()
+    public function attributeGroup()
     {
         return $this->belongsTo(AttributeGroup::class,'attributeGroup_id');
     }

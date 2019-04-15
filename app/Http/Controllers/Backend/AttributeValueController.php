@@ -13,7 +13,7 @@ class AttributeValueController extends Controller
 
     public function index()
     {
-        $attributesValue=AttributeValue::with('attributesGroup')-> paginate(10);
+        $attributesValue=AttributeValue::with('attributeGroup')-> paginate(10);
         //return $attributesValue;
         return view('admin.attributes-value.index',['attributesValue'=>$attributesValue]);
     }
