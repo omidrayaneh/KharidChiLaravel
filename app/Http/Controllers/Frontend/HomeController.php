@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Frontend;
 
+use App\Category;
 use App\Product;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -16,7 +17,11 @@ class HomeController extends Controller
     public function index()
     {
         $latestProduct=Product::orderBy('created_at','desc')->limit(10)->get();
-        return view('frontend.home.index',compact('latestProduct'));
+        $categories = Category::with('childrenRecursive')
+            ->where('parent_id', null)
+            ->get();
+         $category_main=Category::where('parent_id',null)->get();
+        return view('frontend.home.index',compact(['latestProduct','categories','category_main']));
     }
 
     /**

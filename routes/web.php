@@ -16,6 +16,8 @@ Route::prefix('api')->group(function (){
     Route::get('/categories','Backend\CategoryController@apiIndex');
     Route::post('/categories/attribute','Backend\CategoryController@apiIndexAttribute');
     Route::get('/cities/{provinceId}','Auth\RegisterController@getAllCities');
+    Route::get('/products/{id}','Frontend\ProductController@apiGetProduct');
+
 });
 Route::prefix('administrator')->group(function (){
     Route::get('/','Backend\MainController@mainPage');
@@ -42,4 +44,5 @@ Route::get('/add-product-to-cart/{id}','Frontend\CartController@addToCart')->nam
 Route::post('/remove-cart-item/{id}','Frontend\CartController@removeItem')->name('cart.remove');
 Route::get('/cart','Frontend\CartController@getCart')->name('cart.cart');
 Route::get('/products/{slug}','Frontend\ProductController@getProduct')->name('product.single');
+Route::get('/category/{id}/','Frontend\ProductController@getProductByCategory')->name('category.index');
 

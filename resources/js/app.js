@@ -6,7 +6,7 @@
  */
 
 require('./bootstrap');
-
+var Paginate = require('vuejs-paginate')
 window.Vue = require('vue');
 
 /**
@@ -23,7 +23,8 @@ window.Vue = require('vue');
 //Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 Vue.component('attribute-component', require('./components/AttrubuteComponent.vue').default);
 Vue.component('select-city-component', require('./components/SelectCityComponent.vue').default);
-
+Vue.component('product-component', require('./components/productComponent.vue').default);
+Vue.component('paginate', Paginate)
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application

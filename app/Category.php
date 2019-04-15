@@ -6,6 +6,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class Category extends Model
 {
+    public function products()
+    {
+        return $this->belongsToMany(Product::class) ;
+    }
     public function children()
     {
      return $this->hasMany(Category::class,'parent_id');
@@ -15,10 +19,7 @@ class Category extends Model
     {
       return $this->children()->with('childrenRecursive');
     }
-    public function products()
-    {
-        return $this->belongsToMany(Product::class()) ;
-    }
+
     public function attributesGroup()
     {
         return $this->belongsToMany(AttributeGroup::class,'attributegroup_category','category_id','attributeGroup_id') ;
