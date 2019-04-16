@@ -20,8 +20,7 @@ class HomeController extends Controller
         $categories = Category::with('childrenRecursive')
             ->where('parent_id', null)
             ->get();
-         $category_main=Category::where('parent_id',null)->get();
-        return view('frontend.home.index',compact(['latestProduct','categories','category_main']));
+        return view('frontend.home.index',compact(['latestProduct','categories']));
     }
 
     /**

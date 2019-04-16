@@ -2051,14 +2051,13 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
-      products: []
+      products: [],
+      sort: 'DESC',
+      page: 1,
+      paginate: 2
     };
   },
   props: ['category'],
@@ -2077,8 +2076,25 @@ __webpack_require__.r(__webpack_exports__);
       var _this2 = this;
 
       this.products = [];
-      axios.get('/api/products/' + this.category.id + '?page=' + pageNum).then(function (res) {
-        _this2.products = res.data.products;
+
+      if (this.flag) {
+        this.getFilterProduct();
+      } else if (this.sort === "ASC" || this.sort === "DESC") {
+        this.getSortedProduct();
+      } else {
+        axios.get('/api/products/' + this.category.id + '?page=' + pageNum).then(function (res) {
+          _this2.products = res.data.products;
+        }).catch(function (err) {
+          console.log(err);
+        });
+      }
+    },
+    getSortedProduct: function getSortedProduct() {
+      var _this3 = this;
+
+      this.products = [];
+      axios.get('/api/sort-products/' + this.category.id + '/' + this.sort + '/' + this.paginate + '?page=' + this.page).then(function (res) {
+        _this3.products = res.data.products;
       }).catch(function (err) {
         console.log(err);
       });
@@ -37469,7 +37485,111 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
-    _vm._m(0),
+    _c("div", { staticClass: "product-filter" }, [
+      _c("div", { staticClass: "row" }, [
+        _vm._m(0),
+        _vm._v(" "),
+        _vm._m(1),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-md-3 col-sm-4 text-right" }, [
+          _c(
+            "select",
+            {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.sort,
+                  expression: "sort"
+                }
+              ],
+              staticClass: "form-control col-sm-8",
+              attrs: { id: "input-sort" },
+              on: {
+                change: [
+                  function($event) {
+                    var $$selectedVal = Array.prototype.filter
+                      .call($event.target.options, function(o) {
+                        return o.selected
+                      })
+                      .map(function(o) {
+                        var val = "_value" in o ? o._value : o.value
+                        return val
+                      })
+                    _vm.sort = $event.target.multiple
+                      ? $$selectedVal
+                      : $$selectedVal[0]
+                  },
+                  function($event) {
+                    return _vm.getSortedProduct()
+                  }
+                ]
+              }
+            },
+            [
+              _c("option", { attrs: { value: "ASC" } }, [
+                _vm._v("قیمت (کم به زیاد)")
+              ]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "DESC" } }, [
+                _vm._v("قیمت (زیاد به کم)")
+              ])
+            ]
+          )
+        ]),
+        _vm._v(" "),
+        _vm._m(2),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-sm-2 text-right" }, [
+          _c(
+            "select",
+            {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.paginate,
+                  expression: "paginate"
+                }
+              ],
+              staticClass: "form-control",
+              attrs: { id: "input-limit" },
+              on: {
+                change: [
+                  function($event) {
+                    var $$selectedVal = Array.prototype.filter
+                      .call($event.target.options, function(o) {
+                        return o.selected
+                      })
+                      .map(function(o) {
+                        var val = "_value" in o ? o._value : o.value
+                        return val
+                      })
+                    _vm.paginate = $event.target.multiple
+                      ? $$selectedVal
+                      : $$selectedVal[0]
+                  },
+                  function($event) {
+                    return _vm.getSortedProduct()
+                  }
+                ]
+              }
+            },
+            [
+              _c("option", { attrs: { value: "2" } }, [_vm._v("2")]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "3" } }, [_vm._v("3")]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "4" } }, [_vm._v("4")]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "5" } }, [_vm._v("5")]),
+              _vm._v(" "),
+              _c("option", { attrs: { value: "10" } }, [_vm._v("10")])
+            ]
+          )
+        ])
+      ])
+    ]),
     _vm._v(" "),
     _c("br"),
     _vm._v(" "),
@@ -37569,27 +37689,36 @@ var render = function() {
       0
     ),
     _vm._v(" "),
-    _c("div", { staticClass: "row" }, [
-      _c(
-        "div",
-        { staticClass: "col-sm-12 text-center" },
-        [
-          _c("paginate", {
-            attrs: {
-              "page-count": _vm.products.last_page,
-              "page-range": 3,
-              "margin-pages": 2,
-              "click-handler": _vm.clickCallback,
-              "prev-text": "قبلی",
-              "next-text": "بعدی",
-              "container-class": "pagination",
-              "page-class": "page-item"
-            }
-          })
-        ],
-        1
-      )
-    ])
+    _vm.products.last_page
+      ? _c("div", { staticClass: "row" }, [
+          _c(
+            "div",
+            { staticClass: "col-sm-12 text-center" },
+            [
+              _c("paginate", {
+                attrs: {
+                  "page-count": _vm.products.last_page,
+                  "page-range": 3,
+                  "margin-pages": 2,
+                  "click-handler": _vm.clickCallback,
+                  "prev-text": "قبلی",
+                  "next-text": "بعدی",
+                  "container-class": "pagination",
+                  "page-class": "page-item"
+                },
+                model: {
+                  value: _vm.page,
+                  callback: function($$v) {
+                    _vm.page = $$v
+                  },
+                  expression: "page"
+                }
+              })
+            ],
+            1
+          )
+        ])
+      : _vm._e()
   ])
 }
 var staticRenderFns = [
@@ -37597,115 +37726,60 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "product-filter" }, [
-      _c("div", { staticClass: "row" }, [
-        _c("div", { staticClass: "col-md-4 col-sm-5" }, [
-          _c("div", { staticClass: "btn-group" }, [
-            _c(
-              "button",
-              {
-                staticClass: "btn btn-default",
-                attrs: {
-                  type: "button",
-                  id: "list-view",
-                  "data-toggle": "tooltip",
-                  title: "List"
-                }
-              },
-              [_c("i", { staticClass: "fa fa-th-list" })]
-            ),
-            _vm._v(" "),
-            _c(
-              "button",
-              {
-                staticClass: "btn btn-default",
-                attrs: {
-                  type: "button",
-                  id: "grid-view",
-                  "data-toggle": "tooltip",
-                  title: "Grid"
-                }
-              },
-              [_c("i", { staticClass: "fa fa-th" })]
-            )
-          ])
-        ]),
+    return _c("div", { staticClass: "col-md-4 col-sm-5" }, [
+      _c("div", { staticClass: "btn-group" }, [
+        _c(
+          "button",
+          {
+            staticClass: "btn btn-default",
+            attrs: {
+              type: "button",
+              id: "list-view",
+              "data-toggle": "tooltip",
+              title: "List"
+            }
+          },
+          [_c("i", { staticClass: "fa fa-th-list" })]
+        ),
         _vm._v(" "),
-        _c("div", { staticClass: "col-sm-2 text-right" }, [
-          _c(
-            "label",
-            { staticClass: "control-label", attrs: { for: "input-sort" } },
-            [_vm._v("مرتب سازی :")]
-          )
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "col-md-3 col-sm-2 text-right" }, [
-          _c(
-            "select",
-            {
-              staticClass: "form-control col-sm-8",
-              attrs: { id: "input-sort" }
-            },
-            [
-              _c("option", { attrs: { value: "", selected: "selected" } }, [
-                _vm._v("پیشفرض")
-              ]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "" } }, [_vm._v("نام (الف - ی)")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "" } }, [_vm._v("نام (ی - الف)")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "" } }, [
-                _vm._v("قیمت (کم به زیاد)")
-              ]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "" } }, [
-                _vm._v("قیمت (زیاد به کم)")
-              ]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "" } }, [
-                _vm._v("امتیاز (بیشترین)")
-              ]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "" } }, [
-                _vm._v("امتیاز (کمترین)")
-              ]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "" } }, [_vm._v("مدل (A - Z)")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "" } }, [_vm._v("مدل (Z - A)")])
-            ]
-          )
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "col-sm-1 text-right" }, [
-          _c(
-            "label",
-            { staticClass: "control-label", attrs: { for: "input-limit" } },
-            [_vm._v("نمایش :")]
-          )
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "col-sm-2 text-right" }, [
-          _c(
-            "select",
-            { staticClass: "form-control", attrs: { id: "input-limit" } },
-            [
-              _c("option", { attrs: { value: "", selected: "selected" } }, [
-                _vm._v("20")
-              ]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "" } }, [_vm._v("25")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "" } }, [_vm._v("50")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "" } }, [_vm._v("75")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "" } }, [_vm._v("100")])
-            ]
-          )
-        ])
+        _c(
+          "button",
+          {
+            staticClass: "btn btn-default",
+            attrs: {
+              type: "button",
+              id: "grid-view",
+              "data-toggle": "tooltip",
+              title: "Grid"
+            }
+          },
+          [_c("i", { staticClass: "fa fa-th" })]
+        )
       ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-sm-2 text-right" }, [
+      _c(
+        "label",
+        { staticClass: "control-label", attrs: { for: "input-sort" } },
+        [_vm._v("مرتب سازی :")]
+      )
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-sm-1 text-right" }, [
+      _c(
+        "label",
+        { staticClass: "control-label", attrs: { for: "input-limit" } },
+        [_vm._v("نمایش :")]
+      )
     ])
   }
 ]

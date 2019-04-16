@@ -63,9 +63,10 @@ class AttributeValueController extends Controller
      */
     public function edit($id)
     {
-        $attributeValue=AttributeValue::with('attributesGroup')->whereId($id)->first();
-        $attributesGroup=AttributeGroup::all();
-        return view('admin.attributes-value.edit',['attributeValue'=>$attributeValue ,'attributesGroup'=>$attributesGroup]);
+
+        $attributeValue = AttributeValue::with('attributeGroup')->whereId($id)->first();
+        $attributesGroup = AttributeGroup::all();
+        return view('admin.attributes-value.edit', ['attributeValue'=>$attributeValue, 'attributesGroup'=>$attributesGroup]);
     }
 
     /**

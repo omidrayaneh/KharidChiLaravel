@@ -20,6 +20,7 @@ class CreateAddressTable extends Migration
 
             $table->unsignedInteger('province_id');
             $table->foreign('province_id')->references('id')->on('provinces');
+            
             $table->unsignedInteger('city_id');
             $table->foreign('city_id')->references('id')->on('cities');
 

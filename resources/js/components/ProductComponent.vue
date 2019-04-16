@@ -11,29 +11,24 @@
                 <div class="col-sm-2 text-right">
                     <label class="control-label" for="input-sort">مرتب سازی :</label>
                 </div>
-                <div class="col-md-3 col-sm-2 text-right">
-                    <select id="input-sort" class="form-control col-sm-8">
-                        <option value="" selected="selected">پیشفرض</option>
-                        <option value="">نام (الف - ی)</option>
-                        <option value="">نام (ی - الف)</option>
-                        <option value="">قیمت (کم به زیاد)</option>
-                        <option value="">قیمت (زیاد به کم)</option>
-                        <option value="">امتیاز (بیشترین)</option>
-                        <option value="">امتیاز (کمترین)</option>
-                        <option value="">مدل (A - Z)</option>
-                        <option value="">مدل (Z - A)</option>
+                <div class="col-md-3 col-sm-4 text-right">
+                    <select id="input-sort" class="form-control col-sm-8" v-model="sort" @change="getSortedProduct()">
+
+                        <option value="ASC">قیمت (کم به زیاد)</option>
+                        <option value="DESC">قیمت (زیاد به کم)</option>
+
                     </select>
                 </div>
                 <div class="col-sm-1 text-right">
-                    <label class="control-label" for="input-limit">نمایش :</label>
+                    <label class="control-label" for="input-limit" >نمایش :</label>
                 </div>
                 <div class="col-sm-2 text-right">
-                    <select id="input-limit" class="form-control">
-                        <option value="" selected="selected">20</option>
-                        <option value="">25</option>
-                        <option value="">50</option>
-                        <option value="">75</option>
-                        <option value="">100</option>
+                    <select id="input-limit" class="form-control" v-model="paginate" @change = "getSortedProduct()">
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="10">10</option>
                     </select>
                 </div>
             </div>
@@ -55,9 +50,10 @@
 
             </div>
         </div>
-        <div class="row">
+        <div class="row" v-if="products.last_page">
             <div class="col-sm-12 text-center">
                 <paginate
+                        v-model="page"
                         :page-count="products.last_page"
                         :page-range="3"
                         :margin-pages="2"
@@ -76,7 +72,10 @@
     export default {
         data() {
             return {
-                products:[]
+                products:[],
+                sort: 'DESC',
+                page:1,
+                paginate:2
             }
         },
         props: ['category'],
@@ -91,12 +90,28 @@
         methods: {
             clickCallback: function(pageNum){
                 this.products=[];
-                axios.get('/api/products/'+this.category.id+'?page='+ pageNum ).then(res=>{
+                if(this.flag){
+                    this.getFilterProduct();
+                }
+                else if(this.sort === "ASC" || this.sort === "DESC"){
+                    this.getSortedProduct()
+                }else{
+                    axios.get('/api/products/' + this.category.id +'?page='+ pageNum).then(res =>{
+                        this.products = res.data.products
+                    }).catch(err=>{
+                        console.log (err)
+                    })
+                }
+            },
+            getSortedProduct:function () {
+                this.products=[];
+                axios.get('/api/sort-products/' + this.category.id + '/' + this.sort +'/' +this.paginate+ '?page=' + this.page ).then(res=>{
                     this.products=res.data.products
                 }).catch(err=>{
                     console.log(err)
                 })
             }
+
         }
     }
 </script>

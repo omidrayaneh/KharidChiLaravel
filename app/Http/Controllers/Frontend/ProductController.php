@@ -24,14 +24,24 @@ class ProductController extends Controller
         return view('frontend.categories.index',compact(['category']));
     }
 
-    public function apiGetProduct($id)
+    public function apiGetProduct($id){
+        $products = Product::with('photos')->whereHas('categories', function($q) use($id){
+            $q->where('id', $id);
+        })->paginate(3);
+        $response =[
+            'products' => $products
+        ];
+        return response()->json($response, 200);
+    }
+    public function apiGetSortedProduct($id,$sort,$paginate)
     {
         $products=Product::with('photos')->whereHas('categories',function ($q) use($id){
             $q->where('id',$id);
-        })->paginate(10);
+        })->orderBy('price',$sort)
+            ->paginate($paginate);
 
         $response=[
-            'products'=>$products
+            'products'=>$products,
         ];
 
         return response()->json($response,200);

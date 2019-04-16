@@ -201,7 +201,21 @@
                 <div class="collapse navbar-collapse navbar-ex1-collapse">
                     <ul class="nav navbar-nav">
                         <li><a class="home_link" title="خانه" href="index.html">خانه</a></li>
-
+                       {{-- @foreach($categories as  $cat)--}}
+                        <li class="dropdown"><a href="{{route('category.index',1)}}">{{--@if(!$cat->parent_id) {{$cat->name}} @endif--}}</a>
+                            {{--<div class="dropdown-menu">
+                                <ul>
+                                    <li><a href="category.html"><span>&rsaquo;</span></a>
+                                        <div class="dropdown-menu">
+                                            <ul>
+                                                <li><a href="category.html"></a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>--}}
+                        </li>
+                       {{-- @endforeach--}}
                         <li class="menu_brands dropdown"><a href="#">برند ها</a>
                             <div class="dropdown-menu">
                                 <div class="col-lg-1 col-md-2 col-sm-3 col-xs-6"><a href="#"><img src="/image/product/apple_logo-60x60.jpg" title="اپل" alt="اپل" /></a><a href="#">اپل</a></div>
