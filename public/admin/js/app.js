@@ -2051,13 +2051,237 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
       products: [],
       sort: 'DESC',
       page: 1,
-      paginate: 2
+      paginate: 2,
+      attributeGroups: [],
+      selectedAttribute: [],
+      computedAttribute: [],
+      flag: false
     };
   },
   props: ['category'],
@@ -2065,8 +2289,12 @@ __webpack_require__.r(__webpack_exports__);
     var _this = this;
 
     axios.get('/api/products/' + this.category.id).then(function (res) {
-      _this.paginate = res.data.products;
       _this.products = res.data.products;
+    }).catch(function (err) {
+      console.log(err);
+    });
+    axios.get('/api/category-attribute/' + this.category.id).then(function (res) {
+      _this.attributeGroups = res.data.attributeGroups;
     }).catch(function (err) {
       console.log(err);
     });
@@ -2095,6 +2323,37 @@ __webpack_require__.r(__webpack_exports__);
       this.products = [];
       axios.get('/api/sort-products/' + this.category.id + '/' + this.sort + '/' + this.paginate + '?page=' + this.page).then(function (res) {
         _this3.products = res.data.products;
+      }).catch(function (err) {
+        console.log(err);
+      });
+    },
+    addFilter: function addFilter(event, index) {
+      for (var i = 0; i < this.selectedAttribute.length; i++) {
+        var current = this.selectedAttribute[i];
+
+        if (current.index === index) {
+          this.selectedAttribute.splice(i, 1);
+        }
+      }
+
+      this.selectedAttribute.push({
+        'index': index,
+        'value': event.target.value
+      });
+      this.computedAttribute = [];
+
+      for (var i = 0; i < this.selectedAttribute.length; i++) {
+        this.computedAttribute.push(this.selectedAttribute[i].value);
+      }
+    },
+    getFilterProduct: function getFilterProduct() {
+      var _this4 = this;
+
+      this.products = [];
+      this.flag = true;
+      var attributes = JSON.stringify(this.computedAttribute);
+      axios.get('/api/filter-products/' + this.category.id + '/' + this.sort + '/' + this.paginate + '/' + attributes + '?page=' + this.page).then(function (res) {
+        _this4.products = res.data.products;
       }).catch(function (err) {
         console.log(err);
       });
@@ -37485,147 +37744,204 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
-    _c("div", { staticClass: "product-filter" }, [
-      _c("div", { staticClass: "row" }, [
-        _vm._m(0),
-        _vm._v(" "),
-        _vm._m(1),
-        _vm._v(" "),
-        _c("div", { staticClass: "col-md-3 col-sm-4 text-right" }, [
-          _c(
-            "select",
-            {
-              directives: [
-                {
-                  name: "model",
-                  rawName: "v-model",
-                  value: _vm.sort,
-                  expression: "sort"
-                }
-              ],
-              staticClass: "form-control col-sm-8",
-              attrs: { id: "input-sort" },
-              on: {
-                change: [
-                  function($event) {
-                    var $$selectedVal = Array.prototype.filter
-                      .call($event.target.options, function(o) {
-                        return o.selected
-                      })
-                      .map(function(o) {
-                        var val = "_value" in o ? o._value : o.value
-                        return val
-                      })
-                    _vm.sort = $event.target.multiple
-                      ? $$selectedVal
-                      : $$selectedVal[0]
-                  },
-                  function($event) {
-                    return _vm.getSortedProduct()
-                  }
-                ]
-              }
-            },
-            [
-              _c("option", { attrs: { value: "ASC" } }, [
-                _vm._v("قیمت (کم به زیاد)")
-              ]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "DESC" } }, [
-                _vm._v("قیمت (زیاد به کم)")
-              ])
-            ]
-          )
-        ]),
-        _vm._v(" "),
-        _vm._m(2),
-        _vm._v(" "),
-        _c("div", { staticClass: "col-sm-2 text-right" }, [
-          _c(
-            "select",
-            {
-              directives: [
-                {
-                  name: "model",
-                  rawName: "v-model",
-                  value: _vm.paginate,
-                  expression: "paginate"
-                }
-              ],
-              staticClass: "form-control",
-              attrs: { id: "input-limit" },
-              on: {
-                change: [
-                  function($event) {
-                    var $$selectedVal = Array.prototype.filter
-                      .call($event.target.options, function(o) {
-                        return o.selected
-                      })
-                      .map(function(o) {
-                        var val = "_value" in o ? o._value : o.value
-                        return val
-                      })
-                    _vm.paginate = $event.target.multiple
-                      ? $$selectedVal
-                      : $$selectedVal[0]
-                  },
-                  function($event) {
-                    return _vm.getSortedProduct()
-                  }
-                ]
-              }
-            },
-            [
-              _c("option", { attrs: { value: "2" } }, [_vm._v("2")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "3" } }, [_vm._v("3")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "4" } }, [_vm._v("4")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "5" } }, [_vm._v("5")]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "10" } }, [_vm._v("10")])
-            ]
-          )
-        ])
-      ])
-    ]),
-    _vm._v(" "),
-    _c("br"),
-    _vm._v(" "),
     _c(
-      "div",
-      { staticClass: "row products-category" },
-      _vm._l(_vm.products.data, function(product) {
-        return _c(
+      "aside",
+      { staticClass: "col-sm-3 hidden-xs", attrs: { id: "column-left" } },
+      [
+        _c("h3", { staticClass: "subtitle" }, [_vm._v("فیلتر")]),
+        _vm._v(" "),
+        _c(
           "div",
-          { staticClass: "product-layout product-grid col-lg-3 col-md-3" },
+          { staticClass: "box-category" },
           [
-            _c("div", { staticClass: "product-thumb clearfix" }, [
-              _c("div", { staticClass: "image" }, [
+            _vm._l(_vm.attributeGroups, function(attributeGroup, index) {
+              return _c("div", { staticClass: "form-group" }, [
+                _c("label", [_vm._v("ویژگی " + _vm._s(attributeGroup.title))]),
+                _vm._v(" "),
                 _c(
-                  "a",
+                  "select",
                   {
-                    attrs: {
-                      href: "http://kharidchi.test:10/products/" + product.slug
+                    staticClass: "form-control",
+                    on: {
+                      change: function($event) {
+                        return _vm.addFilter($event, index)
+                      }
                     }
                   },
                   [
-                    _c("img", {
-                      staticClass: "img-responsive",
-                      attrs: {
-                        src:
-                          "http://kharidchi.test:10/" + product.photos[0].path,
-                        alt: "تی شرت کتان مردانه",
-                        title: "تی شرت کتان مردانه"
-                      }
+                    _c("option", [_vm._v("انتخاب کنید...")]),
+                    _vm._v(" "),
+                    _vm._l(attributeGroup.attributes_value, function(
+                      attributeValue
+                    ) {
+                      return _c(
+                        "option",
+                        { domProps: { value: attributeValue.id } },
+                        [_vm._v(_vm._s(attributeValue.title))]
+                      )
                     })
-                  ]
+                  ],
+                  2
                 )
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "caption" }, [
-                _c("h4", [
+              ])
+            }),
+            _vm._v(" "),
+            _c(
+              "button",
+              {
+                staticClass: "btn btn-danger pull-left",
+                attrs: { type: "submit" },
+                on: {
+                  click: function($event) {
+                    return _vm.getFilterProduct()
+                  }
+                }
+              },
+              [_vm._v("جستجو")]
+            )
+          ],
+          2
+        ),
+        _vm._v(" "),
+        _c("hr"),
+        _vm._v(" "),
+        _c("h3", { staticClass: "subtitle" }, [_vm._v("دسته ها")]),
+        _vm._v(" "),
+        _vm._m(0),
+        _vm._v(" "),
+        _c("h3", { staticClass: "subtitle" }, [_vm._v("پرفروش ها")]),
+        _vm._v(" "),
+        _vm._m(1),
+        _vm._v(" "),
+        _c("h3", { staticClass: "subtitle" }, [_vm._v("ویژه")]),
+        _vm._v(" "),
+        _vm._m(2),
+        _vm._v(" "),
+        _vm._m(3)
+      ]
+    ),
+    _vm._v(" "),
+    _c("div", { staticClass: "col-sm-9", attrs: { id: "content" } }, [
+      _c("h1", { staticClass: "title" }, [_vm._v(_vm._s(_vm.category.name))]),
+      _vm._v(" "),
+      _c("div", { staticClass: "product-filter" }, [
+        _c("div", { staticClass: "row" }, [
+          _vm._m(4),
+          _vm._v(" "),
+          _vm._m(5),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-md-3 col-sm-4 text-right" }, [
+            _c(
+              "select",
+              {
+                directives: [
+                  {
+                    name: "model",
+                    rawName: "v-model",
+                    value: _vm.sort,
+                    expression: "sort"
+                  }
+                ],
+                staticClass: "form-control col-sm-8",
+                attrs: { id: "input-sort" },
+                on: {
+                  change: [
+                    function($event) {
+                      var $$selectedVal = Array.prototype.filter
+                        .call($event.target.options, function(o) {
+                          return o.selected
+                        })
+                        .map(function(o) {
+                          var val = "_value" in o ? o._value : o.value
+                          return val
+                        })
+                      _vm.sort = $event.target.multiple
+                        ? $$selectedVal
+                        : $$selectedVal[0]
+                    },
+                    function($event) {
+                      return _vm.getSortedProduct()
+                    }
+                  ]
+                }
+              },
+              [
+                _c("option", { attrs: { value: "ASC" } }, [
+                  _vm._v("قیمت (کم به زیاد)")
+                ]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "DESC" } }, [
+                  _vm._v("قیمت (زیاد به کم)")
+                ])
+              ]
+            )
+          ]),
+          _vm._v(" "),
+          _vm._m(6),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-sm-2 text-right" }, [
+            _c(
+              "select",
+              {
+                directives: [
+                  {
+                    name: "model",
+                    rawName: "v-model",
+                    value: _vm.paginate,
+                    expression: "paginate"
+                  }
+                ],
+                staticClass: "form-control",
+                attrs: { id: "input-limit" },
+                on: {
+                  change: [
+                    function($event) {
+                      var $$selectedVal = Array.prototype.filter
+                        .call($event.target.options, function(o) {
+                          return o.selected
+                        })
+                        .map(function(o) {
+                          var val = "_value" in o ? o._value : o.value
+                          return val
+                        })
+                      _vm.paginate = $event.target.multiple
+                        ? $$selectedVal
+                        : $$selectedVal[0]
+                    },
+                    function($event) {
+                      return _vm.getSortedProduct()
+                    }
+                  ]
+                }
+              },
+              [
+                _c("option", { attrs: { value: "2" } }, [_vm._v("2")]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "3" } }, [_vm._v("3")]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "4" } }, [_vm._v("4")]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "5" } }, [_vm._v("5")]),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "10" } }, [_vm._v("10")])
+              ]
+            )
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("br"),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "row products-category" },
+        _vm._l(_vm.products.data, function(product) {
+          return _c(
+            "div",
+            { staticClass: "product-layout product-grid col-lg-3 col-md-3" },
+            [
+              _c("div", { staticClass: "product-thumb clearfix" }, [
+                _c("div", { staticClass: "image" }, [
                   _c(
                     "a",
                     {
@@ -37634,94 +37950,1000 @@ var render = function() {
                           "http://kharidchi.test:10/products/" + product.slug
                       }
                     },
-                    [_vm._v(_vm._s(product.title))]
+                    [
+                      _c("img", {
+                        staticClass: "img-responsive",
+                        attrs: {
+                          src:
+                            "http://kharidchi.test:10/" +
+                            product.photos[0].path,
+                          alt: "تی شرت کتان مردانه",
+                          title: "تی شرت کتان مردانه"
+                        }
+                      })
+                    ]
                   )
                 ]),
                 _vm._v(" "),
-                product.discount_price
-                  ? _c("p", { staticClass: "price" }, [
-                      _c("span", { staticClass: "price-new" }, [
-                        _vm._v(_vm._s(product.discount_price) + " تومان")
-                      ]),
-                      _vm._v(" "),
-                      _c("span", { staticClass: "price-old" }, [
-                        _vm._v(_vm._s(product.price) + " تومان ")
-                      ]),
-                      _c("span", { staticClass: "saving" }, [
-                        _vm._v(
-                          _vm._s(
-                            Math.round(
-                              ((product.price - product.discount_price) /
-                                product.price) *
-                                100
-                            )
-                          ) + "%"
-                        )
+                _c("div", { staticClass: "caption" }, [
+                  _c("h4", [
+                    _c(
+                      "a",
+                      {
+                        attrs: {
+                          href:
+                            "http://kharidchi.test:10/products/" + product.slug
+                        }
+                      },
+                      [_vm._v(_vm._s(product.title))]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  product.discount_price
+                    ? _c("p", { staticClass: "price" }, [
+                        _c("span", { staticClass: "price-new" }, [
+                          _vm._v(_vm._s(product.discount_price) + " تومان")
+                        ]),
+                        _vm._v(" "),
+                        _c("span", { staticClass: "price-old" }, [
+                          _vm._v(_vm._s(product.price) + " تومان ")
+                        ]),
+                        _c("span", { staticClass: "saving" }, [
+                          _vm._v(
+                            _vm._s(
+                              Math.round(
+                                ((product.price - product.discount_price) /
+                                  product.price) *
+                                  100
+                              )
+                            ) + "%"
+                          )
+                        ])
                       ])
-                    ])
-                  : _vm._e(),
+                    : _vm._e(),
+                  _vm._v(" "),
+                  !product.discount_price
+                    ? _c("p", { staticClass: "price" }, [
+                        _vm._v(_vm._s(product.price) + " تومان ")
+                      ])
+                    : _vm._e()
+                ]),
                 _vm._v(" "),
-                !product.discount_price
-                  ? _c("p", { staticClass: "price" }, [
-                      _vm._v(_vm._s(product.price) + " تومان ")
-                    ])
-                  : _vm._e()
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "button-group" }, [
-                _c(
-                  "a",
-                  {
-                    staticClass: "btn-primary",
-                    attrs: {
-                      href:
-                        "http://kharidchi.test:10/add-product-to-cart/" +
-                        product.id
-                    }
-                  },
-                  [_c("span", [_vm._v("افزودن به سبد")])]
-                )
+                _c("div", { staticClass: "button-group" }, [
+                  _c(
+                    "a",
+                    {
+                      staticClass: "btn-primary",
+                      attrs: {
+                        href:
+                          "http://kharidchi.test:10/add-product-to-cart/" +
+                          product.id
+                      }
+                    },
+                    [_c("span", [_vm._v("افزودن به سبد")])]
+                  )
+                ])
               ])
-            ])
-          ]
-        )
-      }),
-      0
-    ),
-    _vm._v(" "),
-    _vm.products.last_page
-      ? _c("div", { staticClass: "row" }, [
-          _c(
-            "div",
-            { staticClass: "col-sm-12 text-center" },
-            [
-              _c("paginate", {
-                attrs: {
-                  "page-count": _vm.products.last_page,
-                  "page-range": 3,
-                  "margin-pages": 2,
-                  "click-handler": _vm.clickCallback,
-                  "prev-text": "قبلی",
-                  "next-text": "بعدی",
-                  "container-class": "pagination",
-                  "page-class": "page-item"
-                },
-                model: {
-                  value: _vm.page,
-                  callback: function($$v) {
-                    _vm.page = $$v
-                  },
-                  expression: "page"
-                }
-              })
-            ],
-            1
+            ]
           )
-        ])
-      : _vm._e()
+        }),
+        0
+      ),
+      _vm._v(" "),
+      _vm.products.last_page
+        ? _c("div", { staticClass: "row" }, [
+            _c(
+              "div",
+              { staticClass: "col-sm-12 text-center" },
+              [
+                _c("paginate", {
+                  attrs: {
+                    "page-count": _vm.products.last_page,
+                    "page-range": 3,
+                    "margin-pages": 2,
+                    "click-handler": _vm.clickCallback,
+                    "prev-text": "قبلی",
+                    "next-text": "بعدی",
+                    "container-class": "pagination",
+                    "page-class": "page-item"
+                  },
+                  model: {
+                    value: _vm.page,
+                    callback: function($$v) {
+                      _vm.page = $$v
+                    },
+                    expression: "page"
+                  }
+                })
+              ],
+              1
+            )
+          ])
+        : _vm._e()
+    ])
   ])
 }
 var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "box-category" }, [
+      _c("ul", { attrs: { id: "cat_accordion" } }, [
+        _c("li", [
+          _c("a", { attrs: { href: "category.html" } }, [
+            _vm._v("مد و زیبایی")
+          ]),
+          _vm._v(" "),
+          _c("span", { staticClass: "down" }),
+          _vm._v(" "),
+          _c("ul", [
+            _c("li", [
+              _c("a", { attrs: { href: "category.html" } }, [_vm._v("آقایان")]),
+              _vm._v(" "),
+              _c("span", { staticClass: "down" }),
+              _vm._v(" "),
+              _c("ul", [
+                _c("li", [
+                  _c("a", { attrs: { href: "category.html" } }, [
+                    _vm._v("زیردسته ها")
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("li", [
+                  _c("a", { attrs: { href: "category.html" } }, [
+                    _vm._v("زیردسته ها")
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("li", [
+                  _c("a", { attrs: { href: "category.html" } }, [
+                    _vm._v("زیردسته ها")
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("li", [
+                  _c("a", { attrs: { href: "category.html" } }, [
+                    _vm._v("زیردسته ها")
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("li", [
+                  _c("a", { attrs: { href: "category.html" } }, [
+                    _vm._v("زیردسته جدید")
+                  ])
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _c("a", { attrs: { href: "category.html" } }, [_vm._v("بانوان")])
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _c("a", { attrs: { href: "category.html" } }, [
+                _vm._v("دخترانه")
+              ]),
+              _vm._v(" "),
+              _c("span", { staticClass: "down" }),
+              _vm._v(" "),
+              _c("ul", [
+                _c("li", [
+                  _c("a", { attrs: { href: "category.html" } }, [
+                    _vm._v("زیردسته ها")
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("li", [
+                  _c("a", { attrs: { href: "category.html" } }, [
+                    _vm._v("زیردسته جدید")
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("li", [
+                  _c("a", { attrs: { href: "category.html" } }, [
+                    _vm._v("زیردسته جدید")
+                  ])
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _c("a", { attrs: { href: "category.html" } }, [_vm._v("پسرانه")])
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _c("a", { attrs: { href: "category.html" } }, [_vm._v("نوزاد")])
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _c("a", { attrs: { href: "category.html" } }, [_vm._v("لوازم")]),
+              _vm._v(" "),
+              _c("span", { staticClass: "down" }),
+              _vm._v(" "),
+              _c("ul", [
+                _c("li", [
+                  _c("a", { attrs: { href: "category.html" } }, [
+                    _vm._v("زیردسته های جدید")
+                  ])
+                ])
+              ])
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _c("a", { staticClass: "active", attrs: { href: "category.html" } }, [
+            _vm._v("الکترونیکی")
+          ]),
+          _vm._v(" "),
+          _c("span", { staticClass: "down" }),
+          _vm._v(" "),
+          _c("ul", { staticStyle: { display: "block" } }, [
+            _c("li", [
+              _c("a", { attrs: { href: "category.html" } }, [_vm._v("لپ تاپ")]),
+              _vm._v(" "),
+              _c("span", { staticClass: "down" }),
+              _vm._v(" "),
+              _c("ul", [
+                _c("li", [
+                  _c("a", { attrs: { href: "category.html" } }, [
+                    _vm._v("زیردسته های جدید")
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("li", [
+                  _c("a", { attrs: { href: "category.html" } }, [
+                    _vm._v("زیردسته های جدید")
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("li", [
+                  _c("a", { attrs: { href: "category.html" } }, [
+                    _vm._v("زیردسته جدید")
+                  ])
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _c("a", { attrs: { href: "category.html" } }, [_vm._v("رومیزی")]),
+              _vm._v(" "),
+              _c("span", { staticClass: "down" }),
+              _vm._v(" "),
+              _c("ul", [
+                _c("li", [
+                  _c("a", { attrs: { href: "category.html" } }, [
+                    _vm._v("زیردسته های جدید")
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("li", [
+                  _c("a", { attrs: { href: "category.html" } }, [
+                    _vm._v("زیردسته جدید")
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("li", [
+                  _c("a", { attrs: { href: "category.html" } }, [
+                    _vm._v("زیردسته جدید")
+                  ])
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _c("a", { attrs: { href: "category.html" } }, [_vm._v("دوربین")]),
+              _vm._v(" "),
+              _c("span", { staticClass: "down" }),
+              _vm._v(" "),
+              _c("ul", [
+                _c("li", [
+                  _c("a", { attrs: { href: "category.html" } }, [
+                    _vm._v("زیردسته های جدید")
+                  ])
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _c("a", { attrs: { href: "category.html" } }, [
+                _vm._v("موبایل و تبلت")
+              ]),
+              _vm._v(" "),
+              _c("span", { staticClass: "down" }),
+              _vm._v(" "),
+              _c("ul", [
+                _c("li", [
+                  _c("a", { attrs: { href: "category.html" } }, [
+                    _vm._v("زیردسته های جدید")
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("li", [
+                  _c("a", { attrs: { href: "category.html" } }, [
+                    _vm._v("زیردسته های جدید")
+                  ])
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _c("a", { attrs: { href: "category.html" } }, [
+                _vm._v("صوتی و تصویری")
+              ]),
+              _vm._v(" "),
+              _c("span", { staticClass: "down" }),
+              _vm._v(" "),
+              _c("ul", [
+                _c("li", [
+                  _c("a", { attrs: { href: "category.html" } }, [
+                    _vm._v("زیردسته های جدید")
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("li", [
+                  _c("a", { attrs: { href: "category.html" } }, [
+                    _vm._v("زیردسته جدید")
+                  ])
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _c("a", { attrs: { href: "category.html" } }, [
+                _vm._v("لوازم خانگی")
+              ])
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _c("a", { attrs: { href: "category.html" } }, [_vm._v("کفش")]),
+          _vm._v(" "),
+          _c("span", { staticClass: "down" }),
+          _vm._v(" "),
+          _c("ul", [
+            _c("li", [
+              _c("a", { attrs: { href: "category.html" } }, [_vm._v("آقایان")])
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _c("a", { attrs: { href: "category.html" } }, [_vm._v("بانوان")]),
+              _vm._v(" "),
+              _c("span", { staticClass: "down" }),
+              _vm._v(" "),
+              _c("ul", [
+                _c("li", [
+                  _c("a", { attrs: { href: "category.html" } }, [
+                    _vm._v("زیردسته های جدید")
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("li", [
+                  _c("a", { attrs: { href: "category.html" } }, [
+                    _vm._v("زیردسته ها")
+                  ])
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _c("a", { attrs: { href: "category.html" } }, [_vm._v("دخترانه")])
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _c("a", { attrs: { href: "category.html" } }, [_vm._v("پسرانه")])
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _c("a", { attrs: { href: "category.html" } }, [_vm._v("نوزاد")])
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _c("a", { attrs: { href: "category.html" } }, [_vm._v("لوازم")]),
+              _c("span", { staticClass: "down" }),
+              _vm._v(" "),
+              _c("ul", [
+                _c("li", [
+                  _c("a", { attrs: { href: "category.html" } }, [
+                    _vm._v("زیردسته های جدید")
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("li", [
+                  _c("a", { attrs: { href: "category.html" } }, [
+                    _vm._v("زیردسته های جدید")
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("li", [
+                  _c("a", { attrs: { href: "category.html" } }, [
+                    _vm._v("زیردسته ها")
+                  ])
+                ])
+              ])
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _c("a", { attrs: { href: "category.html" } }, [_vm._v("ساعت")]),
+          _vm._v(" "),
+          _c("span", { staticClass: "down" }),
+          _vm._v(" "),
+          _c("ul", [
+            _c("li", [
+              _c("a", { attrs: { href: "category.html" } }, [
+                _vm._v("ساعت مردانه")
+              ])
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _c("a", { attrs: { href: "category.html" } }, [
+                _vm._v("ساعت زنانه")
+              ])
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _c("a", { attrs: { href: "category.html" } }, [
+                _vm._v("ساعت بچگانه")
+              ])
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _c("a", { attrs: { href: "category.html" } }, [_vm._v("لوازم")])
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _c("a", { attrs: { href: "category.html" } }, [
+            _vm._v("زیبایی و سلامت")
+          ]),
+          _vm._v(" "),
+          _c("span", { staticClass: "down" }),
+          _vm._v(" "),
+          _c("ul", [
+            _c("li", [
+              _c("a", { attrs: { href: "category.html" } }, [
+                _vm._v("عطر و ادکلن")
+              ])
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _c("a", { attrs: { href: "category.html" } }, [_vm._v("آرایشی")])
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _c("a", { attrs: { href: "category.html" } }, [
+                _vm._v("ضد آفتاب")
+              ])
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _c("a", { attrs: { href: "category.html" } }, [
+                _vm._v("مراقبت از پوست")
+              ])
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _c("a", { attrs: { href: "category.html" } }, [
+                _vm._v("مراقبت از چشم")
+              ])
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _c("a", { attrs: { href: "category.html" } }, [
+                _vm._v("مراقبت از مو")
+              ])
+            ])
+          ])
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "side-item" }, [
+      _c("div", { staticClass: "product-thumb clearfix" }, [
+        _c("div", { staticClass: "image" }, [
+          _c("a", { attrs: { href: "product.html" } }, [
+            _c("img", {
+              staticClass: "img-responsive",
+              attrs: {
+                src: "/image/product/apple_cinema_30-50x75.jpg",
+                alt: "تی شرت کتان مردانه",
+                title: "تی شرت کتان مردانه"
+              }
+            })
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "caption" }, [
+          _c("h4", [
+            _c("a", { attrs: { href: "product.html" } }, [
+              _vm._v("تی شرت کتان مردانه")
+            ])
+          ]),
+          _vm._v(" "),
+          _c("p", { staticClass: "price" }, [
+            _c("span", { staticClass: "price-new" }, [_vm._v("110000 تومان")]),
+            _vm._v(" "),
+            _c("span", { staticClass: "price-old" }, [_vm._v("122000 تومان")]),
+            _vm._v(" "),
+            _c("span", { staticClass: "saving" }, [_vm._v("-10%")])
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "product-thumb clearfix" }, [
+        _c("div", { staticClass: "image" }, [
+          _c("a", { attrs: { href: "product.html" } }, [
+            _c("img", {
+              staticClass: "img-responsive",
+              attrs: {
+                src: "/image/product/iphone_1-50x75.jpg",
+                alt: "آیفون 7",
+                title: "آیفون 7"
+              }
+            })
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "caption" }, [
+          _c("h4", [
+            _c("a", { attrs: { href: "product.html" } }, [_vm._v("آیفون 7")])
+          ]),
+          _vm._v(" "),
+          _c("p", { staticClass: "price" }, [_vm._v(" 2200000 تومان ")]),
+          _vm._v(" "),
+          _c("div", { staticClass: "rating" }, [
+            _c("span", { staticClass: "fa fa-stack" }, [
+              _c("i", { staticClass: "fa fa-star fa-stack-2x" }),
+              _c("i", { staticClass: "fa fa-star-o fa-stack-2x" })
+            ]),
+            _vm._v(" "),
+            _c("span", { staticClass: "fa fa-stack" }, [
+              _c("i", { staticClass: "fa fa-star fa-stack-2x" }),
+              _c("i", { staticClass: "fa fa-star-o fa-stack-2x" })
+            ]),
+            _vm._v(" "),
+            _c("span", { staticClass: "fa fa-stack" }, [
+              _c("i", { staticClass: "fa fa-star fa-stack-2x" }),
+              _c("i", { staticClass: "fa fa-star-o fa-stack-2x" })
+            ]),
+            _vm._v(" "),
+            _c("span", { staticClass: "fa fa-stack" }, [
+              _c("i", { staticClass: "fa fa-star fa-stack-2x" }),
+              _c("i", { staticClass: "fa fa-star-o fa-stack-2x" })
+            ]),
+            _vm._v(" "),
+            _c("span", { staticClass: "fa fa-stack" }, [
+              _c("i", { staticClass: "fa fa-star-o fa-stack-2x" })
+            ])
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "product-thumb clearfix" }, [
+        _c("div", { staticClass: "image" }, [
+          _c("a", { attrs: { href: "product.html" } }, [
+            _c("img", {
+              staticClass: "img-responsive",
+              attrs: {
+                src: "/image/product/macbook_1-50x75.jpg",
+                alt: "آیدیا پد یوگا",
+                title: "آیدیا پد یوگا"
+              }
+            })
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "caption" }, [
+          _c("h4", [
+            _c("a", { attrs: { href: "product.html" } }, [
+              _vm._v("آیدیا پد یوگا")
+            ])
+          ]),
+          _vm._v(" "),
+          _c("p", { staticClass: "price" }, [_vm._v(" 900000 تومان ")]),
+          _vm._v(" "),
+          _c("div", { staticClass: "rating" }, [
+            _c("span", { staticClass: "fa fa-stack" }, [
+              _c("i", { staticClass: "fa fa-star fa-stack-2x" }),
+              _c("i", { staticClass: "fa fa-star-o fa-stack-2x" })
+            ]),
+            _vm._v(" "),
+            _c("span", { staticClass: "fa fa-stack" }, [
+              _c("i", { staticClass: "fa fa-star fa-stack-2x" }),
+              _c("i", { staticClass: "fa fa-star-o fa-stack-2x" })
+            ]),
+            _vm._v(" "),
+            _c("span", { staticClass: "fa fa-stack" }, [
+              _c("i", { staticClass: "fa fa-star fa-stack-2x" }),
+              _c("i", { staticClass: "fa fa-star-o fa-stack-2x" })
+            ]),
+            _vm._v(" "),
+            _c("span", { staticClass: "fa fa-stack" }, [
+              _c("i", { staticClass: "fa fa-star fa-stack-2x" }),
+              _c("i", { staticClass: "fa fa-star-o fa-stack-2x" })
+            ]),
+            _vm._v(" "),
+            _c("span", { staticClass: "fa fa-stack" }, [
+              _c("i", { staticClass: "fa fa-star-o fa-stack-2x" })
+            ])
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "product-thumb clearfix" }, [
+        _c("div", { staticClass: "image" }, [
+          _c("a", { attrs: { href: "product.html" } }, [
+            _c("img", {
+              staticClass: "img-responsive",
+              attrs: {
+                src: "/image/product/sony_vaio_1-50x75.jpg",
+                alt: "کفش راحتی مردانه",
+                title: "کفش راحتی مردانه"
+              }
+            })
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "caption" }, [
+          _c("h4", [
+            _c("a", { attrs: { href: "product.html" } }, [
+              _vm._v("کفش راحتی مردانه")
+            ])
+          ]),
+          _vm._v(" "),
+          _c("p", { staticClass: "price" }, [
+            _c("span", { staticClass: "price-new" }, [_vm._v("32000 تومان")]),
+            _vm._v(" "),
+            _c("span", { staticClass: "price-old" }, [
+              _vm._v("12 میلیون تومان")
+            ]),
+            _vm._v(" "),
+            _c("span", { staticClass: "saving" }, [_vm._v("-25%")])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "rating" }, [
+            _c("span", { staticClass: "fa fa-stack" }, [
+              _c("i", { staticClass: "fa fa-star fa-stack-2x" }),
+              _c("i", { staticClass: "fa fa-star-o fa-stack-2x" })
+            ]),
+            _vm._v(" "),
+            _c("span", { staticClass: "fa fa-stack" }, [
+              _c("i", { staticClass: "fa fa-star fa-stack-2x" }),
+              _c("i", { staticClass: "fa fa-star-o fa-stack-2x" })
+            ]),
+            _vm._v(" "),
+            _c("span", { staticClass: "fa fa-stack" }, [
+              _c("i", { staticClass: "fa fa-star fa-stack-2x" }),
+              _c("i", { staticClass: "fa fa-star-o fa-stack-2x" })
+            ]),
+            _vm._v(" "),
+            _c("span", { staticClass: "fa fa-stack" }, [
+              _c("i", { staticClass: "fa fa-star fa-stack-2x" }),
+              _c("i", { staticClass: "fa fa-star-o fa-stack-2x" })
+            ]),
+            _vm._v(" "),
+            _c("span", { staticClass: "fa fa-stack" }, [
+              _c("i", { staticClass: "fa fa-star-o fa-stack-2x" })
+            ])
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "product-thumb clearfix" }, [
+        _c("div", { staticClass: "image" }, [
+          _c("a", { attrs: { href: "product.html" } }, [
+            _c("img", {
+              staticClass: "img-responsive",
+              attrs: {
+                src: "/image/product/FinePix-Long-Zoom-Camera-50x75.jpg",
+                alt: "دوربین فاین پیکس",
+                title: "دوربین فاین پیکس"
+              }
+            })
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "caption" }, [
+          _c("h4", [
+            _c("a", { attrs: { href: "product.html" } }, [
+              _vm._v("دوربین فاین پیکس")
+            ])
+          ]),
+          _vm._v(" "),
+          _c("p", { staticClass: "price" }, [_vm._v("122000 تومان")])
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "side-item" }, [
+      _c("div", { staticClass: "product-thumb clearfix" }, [
+        _c("div", { staticClass: "image" }, [
+          _c("a", { attrs: { href: "product.html" } }, [
+            _c("img", {
+              staticClass: "img-responsive",
+              attrs: {
+                src: "/image/product/macbook_pro_1-50x75.jpg",
+                alt: " کتاب آموزش باغبانی ",
+                title: " کتاب آموزش باغبانی "
+              }
+            })
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "caption" }, [
+          _c("h4", [
+            _c("a", { attrs: { href: "product.html" } }, [
+              _vm._v("کتاب آموزش باغبانی")
+            ])
+          ]),
+          _vm._v(" "),
+          _c("p", { staticClass: "price" }, [
+            _c("span", { staticClass: "price-new" }, [_vm._v("98000 تومان")]),
+            _vm._v(" "),
+            _c("span", { staticClass: "price-old" }, [_vm._v("120000 تومان")]),
+            _vm._v(" "),
+            _c("span", { staticClass: "saving" }, [_vm._v("-26%")])
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "product-thumb clearfix" }, [
+        _c("div", { staticClass: "image" }, [
+          _c("a", { attrs: { href: "product.html" } }, [
+            _c("img", {
+              staticClass: "img-responsive",
+              attrs: {
+                src: "/image/product/samsung_tab_1-50x75.jpg",
+                alt: "تبلت ایسر",
+                title: "تبلت ایسر"
+              }
+            })
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "caption" }, [
+          _c("h4", [
+            _c("a", { attrs: { href: "product.html" } }, [_vm._v("تبلت ایسر")])
+          ]),
+          _vm._v(" "),
+          _c("p", { staticClass: "price" }, [
+            _c("span", { staticClass: "price-new" }, [_vm._v("98000 تومان")]),
+            _vm._v(" "),
+            _c("span", { staticClass: "price-old" }, [_vm._v("240000 تومان")]),
+            _vm._v(" "),
+            _c("span", { staticClass: "saving" }, [_vm._v("-5%")])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "rating" }, [
+            _c("span", { staticClass: "fa fa-stack" }, [
+              _c("i", { staticClass: "fa fa-star fa-stack-2x" }),
+              _c("i", { staticClass: "fa fa-star-o fa-stack-2x" })
+            ]),
+            _vm._v(" "),
+            _c("span", { staticClass: "fa fa-stack" }, [
+              _c("i", { staticClass: "fa fa-star fa-stack-2x" }),
+              _c("i", { staticClass: "fa fa-star-o fa-stack-2x" })
+            ]),
+            _vm._v(" "),
+            _c("span", { staticClass: "fa fa-stack" }, [
+              _c("i", { staticClass: "fa fa-star fa-stack-2x" }),
+              _c("i", { staticClass: "fa fa-star-o fa-stack-2x" })
+            ]),
+            _vm._v(" "),
+            _c("span", { staticClass: "fa fa-stack" }, [
+              _c("i", { staticClass: "fa fa-star fa-stack-2x" }),
+              _c("i", { staticClass: "fa fa-star-o fa-stack-2x" })
+            ]),
+            _vm._v(" "),
+            _c("span", { staticClass: "fa fa-stack" }, [
+              _c("i", { staticClass: "fa fa-star-o fa-stack-2x" })
+            ])
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "product-thumb clearfix" }, [
+        _c("div", { staticClass: "image" }, [
+          _c("a", { attrs: { href: "product.html" } }, [
+            _c("img", {
+              staticClass: "img-responsive",
+              attrs: {
+                src: "/image/product/apple_cinema_30-50x75.jpg",
+                alt: "تی شرت کتان مردانه",
+                title: "تی شرت کتان مردانه"
+              }
+            })
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "caption" }, [
+          _c("h4", [
+            _c(
+              "a",
+              {
+                attrs: {
+                  href:
+                    "http://demo.harnishdesign.net/opencart/marketshop/v1/index.php?route=product/product&product_id=42"
+                }
+              },
+              [_vm._v("تی شرت کتان مردانه")]
+            )
+          ]),
+          _vm._v(" "),
+          _c("p", { staticClass: "price" }, [
+            _c("span", { staticClass: "price-new" }, [_vm._v("110000 تومان")]),
+            _vm._v(" "),
+            _c("span", { staticClass: "price-old" }, [_vm._v("122000 تومان")]),
+            _vm._v(" "),
+            _c("span", { staticClass: "saving" }, [_vm._v("-10%")])
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "product-thumb clearfix" }, [
+        _c("div", { staticClass: "image" }, [
+          _c("a", { attrs: { href: "product.html" } }, [
+            _c("img", {
+              staticClass: "img-responsive",
+              attrs: {
+                src: "/image/product/nikon_d300_1-50x75.jpg",
+                alt: "دوربین دیجیتال حرفه ای",
+                title: "دوربین دیجیتال حرفه ای"
+              }
+            })
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "caption" }, [
+          _c("h4", [
+            _c("a", { attrs: { href: "product.html" } }, [
+              _vm._v("دوربین دیجیتال حرفه ای")
+            ])
+          ]),
+          _vm._v(" "),
+          _c("p", { staticClass: "price" }, [
+            _c("span", { staticClass: "price-new" }, [_vm._v("92000 تومان")]),
+            _vm._v(" "),
+            _c("span", { staticClass: "price-old" }, [_vm._v("98000 تومان")]),
+            _vm._v(" "),
+            _c("span", { staticClass: "saving" }, [_vm._v("-6%")])
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "product-thumb clearfix" }, [
+        _c("div", { staticClass: "image" }, [
+          _c("a", { attrs: { href: "product.html" } }, [
+            _c("img", {
+              staticClass: "img-responsive",
+              attrs: {
+                src: "/image/product/nikon_d300_5-50x75.jpg",
+                alt: "محصولات مراقبت از مو",
+                title: "محصولات مراقبت از مو"
+              }
+            })
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "caption" }, [
+          _c("h4", [
+            _c("a", { attrs: { href: "product.html" } }, [
+              _vm._v("محصولات مراقبت از مو")
+            ])
+          ]),
+          _vm._v(" "),
+          _c("p", { staticClass: "price" }, [
+            _c("span", { staticClass: "price-new" }, [_vm._v("66000 تومان")]),
+            _vm._v(" "),
+            _c("span", { staticClass: "price-old" }, [_vm._v("90000 تومان")]),
+            _vm._v(" "),
+            _c("span", { staticClass: "saving" }, [_vm._v("-27%")])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "rating" }, [
+            _c("span", { staticClass: "fa fa-stack" }, [
+              _c("i", { staticClass: "fa fa-star fa-stack-2x" }),
+              _c("i", { staticClass: "fa fa-star-o fa-stack-2x" })
+            ]),
+            _vm._v(" "),
+            _c("span", { staticClass: "fa fa-stack" }, [
+              _c("i", { staticClass: "fa fa-star-o fa-stack-2x" })
+            ]),
+            _vm._v(" "),
+            _c("span", { staticClass: "fa fa-stack" }, [
+              _c("i", { staticClass: "fa fa-star-o fa-stack-2x" })
+            ]),
+            _vm._v(" "),
+            _c("span", { staticClass: "fa fa-stack" }, [
+              _c("i", { staticClass: "fa fa-star-o fa-stack-2x" })
+            ]),
+            _vm._v(" "),
+            _c("span", { staticClass: "fa fa-stack" }, [
+              _c("i", { staticClass: "fa fa-star-o fa-stack-2x" })
+            ])
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "product-thumb clearfix" }, [
+        _c("div", { staticClass: "image" }, [
+          _c("a", { attrs: { href: "product.html" } }, [
+            _c("img", {
+              staticClass: "img-responsive",
+              attrs: {
+                src: "/image/product/macbook_air_1-50x75.jpg",
+                alt: "لپ تاپ ایلین ور",
+                title: "لپ تاپ ایلین ور"
+              }
+            })
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "caption" }, [
+          _c("h4", [
+            _c("a", { attrs: { href: "product.html" } }, [
+              _vm._v("لپ تاپ ایلین ور")
+            ])
+          ]),
+          _vm._v(" "),
+          _c("p", { staticClass: "price" }, [
+            _c("span", { staticClass: "price-new" }, [
+              _vm._v("10 میلیون تومان")
+            ]),
+            _vm._v(" "),
+            _c("span", { staticClass: "price-old" }, [
+              _vm._v("12 میلیون تومان")
+            ]),
+            _vm._v(" "),
+            _c("span", { staticClass: "saving" }, [_vm._v("-5%")])
+          ])
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "banner owl-carousel" }, [
+      _c("div", { staticClass: "item" }, [
+        _c("a", { attrs: { href: "#" } }, [
+          _c("img", {
+            staticClass: "img-responsive",
+            attrs: {
+              src: "/image/banner/small-banner1-265x350.jpg",
+              alt: "small banner"
+            }
+          })
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "item" }, [
+        _c("a", { attrs: { href: "#" } }, [
+          _c("img", {
+            staticClass: "img-responsive",
+            attrs: {
+              src: "/image/banner/small-banner-265x350.jpg",
+              alt: "small banner1"
+            }
+          })
+        ])
+      ])
+    ])
+  },
   function() {
     var _vm = this
     var _h = _vm.$createElement

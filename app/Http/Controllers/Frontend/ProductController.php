@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Frontend;
 
+use App\AttributeGroup;
 use App\Category;
 use App\Product;
 use Illuminate\Http\Request;
@@ -25,7 +26,8 @@ class ProductController extends Controller
     }
 
     public function apiGetProduct($id){
-        $products = Product::with('photos')->whereHas('categories', function($q) use($id){
+        $products = Product::with('photos')
+            ->whereHas('categories', function($q) use($id){
             $q->where('id', $id);
         })->paginate(3);
         $response =[
@@ -35,7 +37,8 @@ class ProductController extends Controller
     }
     public function apiGetSortedProduct($id,$sort,$paginate)
     {
-        $products=Product::with('photos')->whereHas('categories',function ($q) use($id){
+        $products=Product::with('photos')
+            ->whereHas('categories',function ($q) use($id){
             $q->where('id',$id);
         })->orderBy('price',$sort)
             ->paginate($paginate);
@@ -44,6 +47,35 @@ class ProductController extends Controller
             'products'=>$products,
         ];
 
+        return response()->json($response,200);
+    }
+
+    public function apiGetCategoryAttributes($id)
+    {
+        $attributeGroups=AttributeGroup::with('attributesValue')
+            ->whereHas('categories',function ($q) use ($id){
+             $q->where('category_id',$id);
+            })->get();
+        $response=[
+            'attributeGroups'=>$attributeGroups,
+        ];
+        return response()->json($response,200);
+    }
+
+    public function apigetFilterProduct($id,$sort,$paginate,$attributes)
+    {
+        $attributesArray=  json_decode($attributes,true);
+       $products=Product::with('photos')->whereHas('categories',function ($q) use ($id){
+           $q->where('category_id',$id);
+       })
+           ->whereHas('attributeValues',function ($q) use ($attributesArray){
+               $q->whereIn('attributeValue_id',$attributesArray);
+           })
+           ->orderBy('price',$sort)
+           ->paginate($paginate);
+        $response=[
+            'products'=>$products,
+        ];
         return response()->json($response,200);
     }
 }

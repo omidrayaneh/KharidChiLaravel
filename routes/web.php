@@ -18,7 +18,8 @@ Route::prefix('api')->group(function (){
     Route::get('/cities/{provinceId}','Auth\RegisterController@getAllCities');
     Route::get('/products/{id}','Frontend\ProductController@apiGetProduct');
     Route::get('/sort-products/{id}/{sort}/{paginate}','Frontend\ProductController@apiGetSortedProduct');
-
+    Route::get('/category-attribute/{id}','Frontend\ProductController@apiGetCategoryAttributes');
+    Route::get('/filter-products/{id}/{sort}/{paginate}/{attributs}','Frontend\ProductController@apigetFilterProduct');
 });
 Route::prefix('administrator')->group(function (){
     Route::get('/','Backend\MainController@mainPage');
